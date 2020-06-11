@@ -1,0 +1,29 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fdfdfd;
+}
+
+.homeSection {
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.homeTextContainer {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+img.profilePic {
+  max-height: 1000px;
+  display: flex;
+  max-width: 50%;
+  // border-radius: 50%;
+}
+
