@@ -61,7 +61,19 @@ class NavBar extends React.Component {
                   Contact
                 </Link>
               </li>
-              <li></li>
+              <li>
+              <Link
+                to="episodes"
+                spy={true}
+                smooth={true}
+                delay={200}
+                duration={1000}
+                className="navLink"
+                activeClass="activeClass"
+                >
+                  CV
+                </Link>
+              </li>
             </ul>
           </nav>
         </body>
