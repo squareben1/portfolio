@@ -3,6 +3,10 @@ import "../styles/main.scss";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 class About extends React.Component {
+  handleLinkClick = (url) => {
+    window.open(url, "_blank");
+  };
+
   render() {
     return (
       <>
@@ -28,8 +32,9 @@ class About extends React.Component {
               minus? Ab earum cum nam at, quos id!
             </p>
             <div className="faImages">
-              <FaGithub className="icon" />
-              <FaLinkedin className="icon" />
+              {/* ADD MOUSE OVER ANIMATION */}
+              <FaGithub className="icon" onClick={() => this.handleLinkClick('https://github.com/squareben1')} />
+              <FaLinkedin className="icon" onClick={() => this.handleLinkClick('https://www.linkedin.com/in/bengittins/')}/>
             </div>
           </div>
 

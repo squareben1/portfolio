@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/navBar.scss";
 import { Link } from "react-scroll";
+import { FaFilePdf } from "react-icons/fa";
 
 class NavBar extends React.Component {
   render() {
@@ -21,8 +22,8 @@ class NavBar extends React.Component {
                 >
                   Home
                 </Link>
-                </li>
-                <li>
+              </li>
+              <li>
                 <Link
                   to="aboutSection"
                   spy={true}
@@ -37,42 +38,38 @@ class NavBar extends React.Component {
               </li>
               <li>
                 <Link
-                to="episodes"
-                spy={true}
-                smooth={true}
-                delay={200}
-                duration={1000}
-                className="navLink"
-                activeClass="activeClass"
+                  to="projectsSection"
+                  spy={true}
+                  smooth={true}
+                  delay={200}
+                  duration={1000}
+                  className="navLink"
+                  activeClass="activeClass"
                 >
                   Projects
                 </Link>
               </li>
               <li>
                 <Link
-                to="episodes"
-                spy={true}
-                smooth={true}
-                delay={200}
-                duration={1000}
-                className="navLink"
-                activeClass="activeClass"
+                  to="contactSection"
+                  spy={true}
+                  smooth={true}
+                  delay={200}
+                  duration={1000}
+                  className="navLink"
+                  activeClass="activeClass"
                 >
                   Contact
                 </Link>
               </li>
               <li>
-              <Link
-                to="episodes"
-                spy={true}
-                smooth={true}
-                delay={200}
-                duration={1000}
-                className="navLink"
-                activeClass="activeClass"
+                {/* THIS LINK IS WRONG - clickable area extends beyond text??? */}
+                <a
+                  href="https://drive.google.com/file/d/13DuCqiOX9Iz4eNgkBeZdRhgMd8W8GK1F/view?usp=sharing"
+                  className="navLink"
                 >
                   CV
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
@@ -83,3 +80,7 @@ class NavBar extends React.Component {
 }
 
 export default NavBar;
+
+{
+  /* <FaFilePdf className="cvIcon" /> */
+}
