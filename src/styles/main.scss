@@ -4,7 +4,7 @@ body {
 }
 
 .homeSection {
-  padding-top: 45px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   font-size: 30px;
@@ -55,6 +55,10 @@ img.profilePic {
     padding: 5px;
     height: 50px;
     width: 50px;
+    cursor: pointer;
+    &:hover {
+      color: grey;
+    }
   }
 }
 

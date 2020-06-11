@@ -12,7 +12,7 @@ class About extends React.Component {
       <>
         <section className="aboutSection">
           <div className="aboutTextContainer">
-            <h2 class="heading">Full Stack Developer</h2>
+            <h2 className="heading">Full Stack Developer</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
               voluptate obcaecati nesciunt porro laudantium, autem expedita cum
@@ -37,8 +37,7 @@ class About extends React.Component {
               <FaLinkedin className="icon" onClick={() => this.handleLinkClick('https://www.linkedin.com/in/bengittins/')}/>
             </div>
           </div>
-
-          {/* <img className="profilePic" src={profilePic} alt="profilePic" /> */}
+          {/* ADD LANGUAGES/TECH */}
         </section>
       </>
     );
