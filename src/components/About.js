@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/main.scss";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 class About extends React.Component {
@@ -11,13 +10,13 @@ class About extends React.Component {
     return (
       <>
         <section className="aboutSection">
+          
           <div className="aboutTextContainer">
-            <h2 className="heading">Full Stack Developer</h2>
+          <h2>Full Stack Developer</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
               voluptate obcaecati nesciunt porro laudantium, autem expedita cum
               fugit cupiditate itaque debitis sint, tenetur accusamus, omnis!
-              WHAT
             </p>
 
             <p>
@@ -33,8 +32,20 @@ class About extends React.Component {
             </p>
             <div className="faImages">
               {/* ADD MOUSE OVER ANIMATION */}
-              <FaGithub className="icon" onClick={() => this.handleLinkClick('https://github.com/squareben1')} />
-              <FaLinkedin className="icon" onClick={() => this.handleLinkClick('https://www.linkedin.com/in/bengittins/')}/>
+              <FaGithub
+                className="icon"
+                onClick={() =>
+                  this.handleLinkClick("https://github.com/squareben1")
+                }
+              />
+              <FaLinkedin
+                className="icon"
+                onClick={() =>
+                  this.handleLinkClick(
+                    "https://www.linkedin.com/in/bengittins/"
+                  )
+                }
+              />
             </div>
           </div>
           {/* ADD LANGUAGES/TECH */}

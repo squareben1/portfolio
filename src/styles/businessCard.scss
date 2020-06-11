@@ -1,0 +1,139 @@
+// $font-face: {
+//   font-family: "EB Garamond", serif;
+//   font-family: "Old Standard TT", serif;
+//   font-family: "Roboto", serif;
+// }
+$bone: #e3dac9; // That's 'Bone'
+$eggshell: #f0ead6; // Eggshell...
+$offwhite: rgb(253, 253, 253); // Look At That Subtle Off White Coloring...
+$Sillian-Rail: "EB Garamond"; // And The Lettering Is Something Called 'Sillian Rail'
+$Romalian-Type: "Old Standard TT"; // With Romalian Type, What Do You Think?
+$Pale-Nimbus: "Roboto"; // Raised lettering, Pale Nimbus
+
+// Business Card Ratio = 3.5in by 2 in
+// Aspect Ratio of 131: 75
+// 75 / 131 = 0.57251908396946564885496183206106870229
+
+$bc-width: 36.297828vw;
+$bc-height: $bc-width * 0.57251908396946564885496183206106870229;
+body {
+  background-color: #e8e8e8;
+}
+p {
+  font-size: 0.95em;
+  margin: 0;
+}
+#details {
+  padding: 20px;
+}
+#business-card {
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  height: 200px;
+  min-width: $bc-width;
+  min-height: $bc-height;
+}
+// Bateman Card Specifics
+.patrick-card {
+  background-color: $eggshell;
+  font-family: $Sillian-Rail;
+  text-transform: uppercase;
+}
+.patrick-card #first-name {
+	// font-size: 0.75em;
+	font-size: 1.5em;
+}
+.patrick-card #last-name {
+	// font-size: 0.9em;
+	font-size: 1.8em;
+}
+.patrick-card #title {
+	// font-size: 0.76em;
+	font-size: 1.5em;
+}
+.patrick-card #watermark {
+  display: none;
+}
+#phone-number {
+  position: absolute;
+  top: 20px;
+	left: 25px;
+	font-size: 1.1em;
+}
+#company {
+	font-size: 1.1em;
+}
+#murders-and-executions {
+  font-size: 0.52em;
+}
+#company-section {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+#company-section p {
+  margin: 0;
+}
+#name-and-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#first-name {
+  display: inline-block;
+}
+#last-name {
+  display: inline-block;
+}
+#title {
+  text-align: center;
+  font-size: 0.8em;
+}
+#bottom-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1em;
+  padding: 10px;
+}
+#watermark {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  opacity: 0.1;
+  color: black;
+  font-size: 1.2vw;
+}
+// Media Queries
+// $media (min-width: 1100px) {
+//   p {
+//     font-size: 1.6vw;
+//   }
+//   #murders-and-executions {
+//     font-size: 0.87vw;
+//   }
+//   #title {
+//     font-size: 1.4vw;
+//   }
+//   #bottom-info {
+//     font-size: 1vw;
+//   }
+//   .patrick-card #first-name {
+//     font-size: 1.25vw;
+//   }
+//   .patrick-card #last-name {
+//     font-size: 1.6vw;
+//   }
+//   .patrick-card #title {
+//     font-size: 1.1vw;
+//   }
+// }

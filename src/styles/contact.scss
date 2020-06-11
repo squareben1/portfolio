@@ -1,0 +1,54 @@
+.contactSection {
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding: 100px;
+  h2 {
+    padding: 0 0 50px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    margin: 0;
+  }
+  .contactContainer {
+    // background-color: black;
+    // padding: 30px;
+    max-width: 500px;
+    border: solid 5px black;
+    border-radius: 5px;
+    .contactList {
+      display: flex;
+      flex-wrap: wrap;
+      display: inline-block;
+      justify-content: center;
+      max-width: 1000px;
+      .contactText {
+        padding: 10px;
+        display: flex;
+        min-width: 270px;
+        display: inline-block;
+        vertical-align: middle;
+        flex-direction: row
+
+        a {
+          color: black;
+          font-family: "Open Sans", sans-serif;
+          font-size: 25px;
+        }
+        .contactIcon {
+          font-size: 100px;
+          padding: 10px;
+          height: 70px;
+          width: 70px;
+          color: black;
+          cursor: pointer;
+          &:hover {
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}
