@@ -1,6 +1,6 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "../styles/contact.scss";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 class Contact extends React.Component {
   handleLinkClick = (url) => {
@@ -11,34 +11,66 @@ class Contact extends React.Component {
     return (
       <>
         <section className="contactSection" id="contact">
-          <h2>Contact</h2>
           <div className="contactContainer">
-            <div className="contactList">
-              <div className="contactText">
-                <FaEnvelope className="contactIcon" />
-                bengittins@live.com
-              </div>
-              <div className="contactText">
-                <FaGithub
-                  className="contactIcon"
-                  onClick={() =>
-                    this.handleLinkClick("https://github.com/squareben1")
-                  }
-                />
-                github.com/squareben1
-              </div>
-              <div className="contactText">
-                <FaLinkedin
-                  className="contactIcon"
-                  onClick={() =>
-                    this.handleLinkClick(
-                      "https://www.linkedin.com/in/bengittins/"
-                    )
-                  }
-                />
-                linkedin.com/in/bengittins
-              </div>
+            <div className="contactText">
+              <h2>Contact</h2>
+              You can reach me at bengittins@live.com or at the links below:
+              <br></br>
+              <FaGithub
+                className="icon"
+                onClick={() =>
+                  this.handleLinkClick("https://github.com/squareben1")
+                }
+              />
+              <FaLinkedin
+                className="icon"
+                onClick={() =>
+                  this.handleLinkClick(
+                    "https://www.linkedin.com/in/bengittins/"
+                  )
+                }
+              />
             </div>
+            <form
+              id="contactForm"
+              onSubmit="return validate()"
+              action="contact.php"
+              method="post"
+            >
+              <input
+                class="formInput"
+                type="text"
+                id="name"
+                name="name"
+                autocorrect="off"
+                placeholder="Name?"
+              />
+              <input
+                class="formInput"
+                type="email"
+                name="email"
+                id="email"
+                autocapitalize="off"
+                autocorrect="off"
+                placeholder="Email?"
+              />
+              <textarea
+                class="formInput"
+                name="message"
+                id="message"
+                placeholder="Message?"
+              ></textarea>
+
+              <br></br>
+              <input
+                class="submitForm"
+                type="reset"
+                value="Clear your message"
+              />
+              <input class="submitForm" type="submit" value="Send" />
+            </form>
+
+            
           </div>
         </section>
       </>

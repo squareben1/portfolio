@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Skills from './Skills'
 
 class About extends React.Component {
   handleLinkClick = (url) => {
@@ -10,7 +11,7 @@ class About extends React.Component {
     return (
       <>
         <section className="aboutSection">
-          
+          <Skills />
           <div className="aboutTextContainer">
           <h2>Full Stack Developer</h2>
             <p>
