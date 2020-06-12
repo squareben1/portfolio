@@ -1,4 +1,6 @@
 import React from "react";
+// import IconRails from 'react-devicon/rails/plain'
+import railsIcon from "../assets/railsIcon.png";
 import {
   FaGem,
   FaHtml5,
@@ -10,24 +12,28 @@ import {
   FaSass,
   FaGitAlt,
   FaGithub,
-  FaBootstrap,
 } from "react-icons/fa";
 import {
-  DiDjango,
-  DiMongodb,
   DiPostgresql,
   DiHeroku,
   DiVisualstudio,
   DiJsBadge,
 } from "react-icons/di";
-import { GiCoffeeCup } from "react-icons/gi";
 
 const Skills = () => (
   <div className="aboutSkill">
     <div className="skillDiv">
       <FaGem className="skillIcon" />
-      <p>Ruby & <br></br>Ruby on Rails</p>
+      <p>
+        Ruby
+      </p>
     </div>
+    <div className="skillDiv">
+      <img className="skillIcon" src={railsIcon} alt="img" />
+      {/* <IconRails width={100} height={100}/> */}
+      <p>Ruby on Rails</p>
+    </div>
+
     <div className="skillDiv">
       <FaPython className="skillIcon" />
       <p>Python</p>
@@ -62,10 +68,10 @@ const Skills = () => (
       <FaCss3Alt className="skillIcon" />
       <p>CSS3</p>
     </div>
-    {/* <div className="skillDiv">
+    <div className="skillDiv">
       <FaSass className="skillIcon" />
       <p>Sass</p>
-    </div> */}
+    </div>
     <div className="skillDiv">
       <DiHeroku className="skillIcon" />
       <p>Heroku</p>
@@ -74,10 +80,10 @@ const Skills = () => (
       <FaGitAlt className="skillIcon" />
       <p>Git</p>
     </div>
-    <div className="skillDiv">
+    {/* <div className="skillDiv">
       <FaGithub className="skillIcon" />
       <p>GitHub</p>
-    </div>
+    </div> */}
     {/* <div className="skillDiv">
       <DiVisualstudio className="skillIcon" />
       <p>VS Code</p>
