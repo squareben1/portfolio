@@ -32,7 +32,7 @@
   float: right;
   // box-sizing: content-box;
   min-width: 444px;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 #contactForm input,
@@ -41,7 +41,7 @@ textarea {
   font: 200 1em/1.1em "Helvetica Neue", sans-serif;
   box-sizing: content-box;
   color: #000;
-  background-color: RGBA(204, 204, 204, 0.1);
+  background-color: #d7d7d7;
 
   outline: none;
   border: none;

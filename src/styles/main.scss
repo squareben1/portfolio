@@ -17,7 +17,7 @@ body {
   text-align: center;
   margin: auto;
   width: 50%;
-  padding: 10px;
+  // padding: 10px;
 }
 
 img.profilePic {
@@ -26,31 +26,36 @@ img.profilePic {
   max-width: 50%;
 }
 
-.aboutSection {
+section.aboutSection {
   padding-top: 35px;
+  margin: 99px;
   display: flex;
   justify-content: center;
-  font-size: 22px;
-}
-
-.aboutTextContainer {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  padding: 10%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  h2 {
-    padding: 0 0 50px 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 3rem;
-    margin: 0;
+  font-size: 20px;
+  div.aboutContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    div.aboutTextContainer {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      text-align: center;
+      width: 50%;
+      margin: 20px;
+      // padding: 10%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h2 {
+        padding: 0 0 50px 0;
+        font-family: "Open Sans", sans-serif;
+        font-size: 3rem;
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -70,11 +75,11 @@ img.profilePic {
 .aboutSkill {
   background-color: lightgrey;
   display: flex;
+  margin: 20px;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   max-width: 50%;
-  margin-top: 20px;
   border: solid 5px white;
   border-radius: 5px;
   opacity: 0.9;
