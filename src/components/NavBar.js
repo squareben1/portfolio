@@ -24,7 +24,7 @@ class NavBar extends React.Component {
             </li>
             <li>
               <Link
-                to="aboutSection"
+                to="aboutNavSection"
                 spy={true}
                 smooth={true}
                 delay={200}
@@ -37,7 +37,7 @@ class NavBar extends React.Component {
             </li>
             <li>
               <Link
-                to="projectsSection"
+                to="projectsNavSection"
                 spy={true}
                 smooth={true}
                 delay={200}

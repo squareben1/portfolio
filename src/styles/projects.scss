@@ -1,4 +1,9 @@
-.container {
+.projectsSection {
+  padding-top: 50px;
+
+}
+
+.projContainer {
   padding: 30px;
   display: flex;
   flex-direction: row;
@@ -49,7 +54,7 @@ h1 {
 .text {
   // text-align: center;
   padding: 20px;
-  margin-top: 60px;
+  margin-top: 50px;
   background-color: lightgrey;
   color: black;
   font-size: 18px;

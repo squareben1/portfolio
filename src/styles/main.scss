@@ -1,6 +1,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #fdfdfd;
+  // height: 100vh;
+  // width: 100vw;
 }
 
 .homeSection {
@@ -8,6 +10,8 @@ body {
   display: flex;
   justify-content: center;
   font-size: 30px;
+  // height: 100vh;
+  // width: 100vw;
 }
 
 .homeTextContainer {
@@ -27,7 +31,7 @@ img.profilePic {
 }
 
 section.aboutSection {
-  padding-top: 35px;
+  padding-top: 70px;
   margin: 99px;
   display: flex;
   justify-content: center;
