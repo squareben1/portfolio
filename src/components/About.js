@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
 import Skills from "./Skills";
 
 class About extends React.Component {
@@ -15,7 +15,7 @@ class About extends React.Component {
           <div className="aboutContainer">
             <Skills />
             <div className="aboutTextContainer">
-              <h2>Full Stack Developer</h2>
+              <h1>Full Stack Developer</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Possimus voluptate obcaecati nesciunt porro laudantium, autem
@@ -48,6 +48,14 @@ class About extends React.Component {
                   onClick={() =>
                     this.handleLinkClick(
                       "https://www.linkedin.com/in/bengittins/"
+                    )
+                  }
+                />
+                <FaFilePdf
+                  className="icon"
+                  onClick={() =>
+                    this.handleLinkClick(
+                      "https://drive.google.com/file/d/1MdtPlNRViuSqdySrFCISeMJ9eceFRDv-/view?usp=sharing"
                     )
                   }
                 />

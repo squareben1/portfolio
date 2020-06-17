@@ -10,18 +10,18 @@ class Projects extends React.Component {
       <section className="projectsNavSection"></section>
       
       <section className="projectsSection">
-      <h2>Projects</h2>
+      <h1>Projects</h1>
         <div className="projContainer">
         
           <div className="projectContainer">
-            <h1>DINO RUN</h1>
+            <h2>DINO RUN</h2>
             <img src={DinoRun} className="projectImage" alt="Dino Run" />
             <div className="middle">
               <div className="text">Dino Run</div>
             </div>
           </div>
           <div className="projectContainer">
-            <h1>DINO RUN</h1>
+            <h2>DINO RUN</h2>
             <img src={DinoRun} className="projectImage" alt="Dino Run" />
             <div className="middle">
               <div className="text">
@@ -42,28 +42,28 @@ class Projects extends React.Component {
             </div>
           </div>
           <div className="projectContainer">
-            <h1>DINO RUN</h1>
+            <h2>DINO RUN</h2>
             <img src={DinoRun} className="projectImage" alt="Dino Run" />
             <div className="middle">
               <div className="text">Dino Run</div>
             </div>
           </div>
           <div className="projectContainer">
-            <h1>DINO RUN</h1>
+            <h2>DINO RUN</h2>
             <img src={DinoRun} className="projectImage" alt="Dino Run" />
             <div className="middle">
               <div className="text">Dino Run</div>
             </div>
           </div>
           <div className="projectContainer">
-            <h1>DINO RUN</h1>
+            <h2>DINO RUN</h2>
             <img src={DinoRun} className="projectImage" alt="Dino Run" />
             <div className="middle">
               <div className="text">Dino Run</div>
             </div>
           </div>
           <div className="projectContainer">
-            <h1>DINO RUN</h1>
+            <h2>DINO RUN</h2>
             <img src={DinoRun} className="projectImage" alt="Dino Run" />
             <div className="middle">
               <div className="text">Dino Run</div>

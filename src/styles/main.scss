@@ -1,4 +1,5 @@
 $breakpoint-ipadpro: 1024px;
+$breakpoint-ipad: 768px;
 $breakpoint-galaxy-s4: 360px;
 $breakpoint-tablet: 768px;
 $breakpoint-iphone6-7-8: 375px;
@@ -36,7 +37,7 @@ body {
 
 section.aboutSection {
   padding-top: 70px;
-  padding: 99px;
+  padding: 105px;
   display: flex;
   justify-content: center;
   text-align: justify;
@@ -59,14 +60,21 @@ section.aboutSection {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      h2 {
-        padding: 0 0 50px 0;
-        font-family: "Open Sans", sans-serif;
-        font-size: 3rem;
-        margin: 0;
-      }
+
     }
   }
+}
+
+h1 {
+  padding: 0 0 40px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
 }
 
 .faImages {
@@ -135,6 +143,36 @@ section.aboutSection {
 
   section.aboutSection {
     margin: 0;
+    padding-bottom: 20px;
+    div.aboutContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      div.aboutTextContainer {
+        width: auto;
+        font-size: 28px;
+      }
+    }
+  }
+
+  div.aboutSkill {
+    // width: auto;
+    max-width: fill;
+  }
+}
+
+@media (max-width: $breakpoint-ipad) {
+  section.homeSection {
+    padding-top: 35px;
+  }
+
+  img.profilePic {
+    min-height: 800px;
+  }
+
+  section.aboutSection {
+    margin: 0;
+    padding: 99px;
+    
     div.aboutContainer {
       display: flex;
       flex-direction: column-reverse;
