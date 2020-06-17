@@ -11,12 +11,12 @@ import {
   FaRecycle,
   FaSass,
   FaGitAlt,
-  FaGithub,
+  // FaGithub,
 } from "react-icons/fa";
 import {
   DiPostgresql,
-  DiHeroku,
-  DiVisualstudio,
+  // DiHeroku,
+  // DiVisualstudio,
   DiJsBadge,
 } from "react-icons/di";
 
@@ -72,10 +72,10 @@ const Skills = () => (
       <FaSass className="skillIcon" />
       <p>Sass</p>
     </div>
-    <div className="skillDiv">
+    {/* <div className="skillDiv">
       <DiHeroku className="skillIcon" />
       <p>Heroku</p>
-    </div>
+    </div> */}
     <div className="skillDiv">
       <FaGitAlt className="skillIcon" />
       <p>Git</p>

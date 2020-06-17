@@ -61,16 +61,7 @@ class NavBar extends React.Component {
                 Contact
               </Link>
             </li>
-            <li>
-              {/* move to right of? */}
-              {/* THIS LINK IS WRONG - clickable area extends beyond text??? */}
-              <a
-                href="https://drive.google.com/file/d/13DuCqiOX9Iz4eNgkBeZdRhgMd8W8GK1F/view?usp=sharing"
-                className="navLink"
-              >
-                CV
-              </a>
-            </li>
+
           </ul>
         </section>
       </>

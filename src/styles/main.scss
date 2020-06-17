@@ -1,4 +1,9 @@
-.App {
+$breakpoint-ipadpro: 1024px;
+$breakpoint-galaxy-s4: 360px;
+$breakpoint-tablet: 768px;
+$breakpoint-iphone6-7-8: 375px;
+
+.App-header {
   width: 100%;
 }
 
@@ -6,50 +11,32 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #fdfdfd;
   height: 100vh;
-  width: 100vw;
 }
 
 .homeSection {
-
-  @media (min-width: 1199.98px) {
-    padding-top: 25px;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    // height: 100vh;
-    width: 100%;
-    padding-top: 25px;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    // height: 100vh;
-    width: 100%;
-  }
-}
-
-.homeTextContainer {
-  display: inline-block;
-  align-items: center;
-  @media (min-width: 1199.98px) {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  div.homeTextContainer {
     display: inline-block;
+    align-items: center;
     vertical-align: middle;
     line-height: normal;
     text-align: center;
     margin: auto;
     width: 50%;
-    // padding: 10px;
+    img.profilePic {
+      max-height: 1000px;
+      display: flex;
+      max-width: 50%;
+    }
   }
-}
-
-img.profilePic {
-  max-height: 1000px;
-  display: flex;
-  max-width: 50%;
 }
 
 section.aboutSection {
   padding-top: 70px;
-  margin: 99px;
+  padding: 99px;
   display: flex;
   justify-content: center;
   text-align: justify;
@@ -62,7 +49,7 @@ section.aboutSection {
       display: inline-block;
       vertical-align: middle;
       line-height: normal;
-      padding: 20px;
+      padding: 25px;
       width: 50%;
       // box-sizing: border-box;
       margin: 20px;
@@ -107,15 +94,59 @@ section.aboutSection {
   border: solid 5px white;
   border-radius: 5px;
   opacity: 0.9;
+  padding-bottom: 0px;
   .skillDiv {
+    
     padding: 15px;
     font-size: 18px;
     .skillIcon {
-      padding: 10px;
+      padding: 15px;
       height: 70px;
       width: 70px;
       // background-color: #efcb68;
       color: black;
     }
+  }
+}
+
+@media (max-width: $breakpoint-ipadpro) {
+  section.homeSection {
+    height: 100vh;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    div.homeTextContainer {
+      display: inline-block;
+      align-items: center;
+      vertical-align: middle;
+      line-height: normal;
+      text-align: center;
+      margin: auto;
+      padding: 50px;
+    }
+  }
+
+  img.profilePic {
+    display: flex;
+    min-height: 1100px;
+    max-width: inherit;
+    margin: 0;
+  }
+
+  section.aboutSection {
+    margin: 0;
+    div.aboutContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      div.aboutTextContainer {
+        width: auto;
+        font-size: 28px;
+      }
+    }
+  }
+
+  div.aboutSkill {
+    // width: auto;
+    max-width: fill;
   }
 }
