@@ -38,24 +38,24 @@ class Contact extends React.Component {
               method="post"
             >
               <input
-                class="formInput"
+                className="formInput"
                 type="text"
                 id="name"
                 name="name"
-                autocorrect="off"
+                autoCorrect="off"
                 placeholder="Name?"
               />
               <input
-                class="formInput"
+                className="formInput"
                 type="email"
                 name="email"
                 id="email"
-                autocapitalize="off"
-                autocorrect="off"
+                autoCapitalize="off"
+                autoCorrect="off"
                 placeholder="Email?"
               />
               <textarea
-                class="formInput"
+                className="formInput"
                 name="message"
                 id="message"
                 placeholder="Message?"
@@ -63,11 +63,11 @@ class Contact extends React.Component {
 
               <br></br>
               <input
-                class="submitForm"
+                className="submitForm"
                 type="reset"
                 value="Clear your message"
               />
-              <input class="submitForm" type="submit" value="Send" />
+              <input className="submitForm" type="submit" value="Send" />
             </form>
 
             
