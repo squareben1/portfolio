@@ -12,7 +12,7 @@ class Contact extends React.Component {
       <>
         <section className="contactSection" id="contact">
           <div className="contactContainer">
-            <h2>Say Hi 👋</h2>
+            <h1>Say Hi 👋</h1>
             <div className="contactHolder">
               <div className="contactText">
                 <FaEnvelope
@@ -21,7 +21,7 @@ class Contact extends React.Component {
                     this.handleLinkClick("mailto:bengittins@live.com")
                   }
                 />
-                bengittins@live.com
+                 bengittins@live.com
               </div>
               <div className="contactText">
                 <FaGithub
@@ -30,7 +30,7 @@ class Contact extends React.Component {
                     this.handleLinkClick("https://github.com/squareben1")
                   }
                 />
-                github.com/squareben1
+                 github.com/squareben1
               </div>
               <div className="contactText">
                 <FaLinkedin
@@ -41,7 +41,8 @@ class Contact extends React.Component {
                     )
                   }
                 />
-                linkedin.com/in/bengittins
+                 linkedin.com/in/bengittins
+                 </div>
                 <div className="contactText">
                   <FaFilePdf
                     className="icon"
@@ -54,7 +55,6 @@ class Contact extends React.Component {
                   CV
                 </div>
               </div>
-            </div>
             <form
               id="contactForm"
               onSubmit="return validate()"
