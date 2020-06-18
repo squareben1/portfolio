@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFilePdf, FaEnvelope } from "react-icons/fa";
 import "../styles/contact.scss";
 
 class Contact extends React.Component {
@@ -12,34 +12,48 @@ class Contact extends React.Component {
       <>
         <section className="contactSection" id="contact">
           <div className="contactContainer">
-            <div className="contactText">
-              <h2>Contact</h2>
-              <br></br>
-              You can reach me at bengittins@live.com or at the links below:
-              <br></br>
-              <br></br>
-              <FaGithub
-                className="icon"
-                onClick={() =>
-                  this.handleLinkClick("https://github.com/squareben1")
-                }
-              />
-              <FaLinkedin
-                className="icon"
-                onClick={() =>
-                  this.handleLinkClick(
-                    "https://www.linkedin.com/in/bengittins/"
-                  )
-                }
-              />
-              <FaFilePdf
-                className="icon"
-                onClick={() =>
-                  this.handleLinkClick(
-                    "https://drive.google.com/file/d/1MdtPlNRViuSqdySrFCISeMJ9eceFRDv-/view?usp=sharing"
-                  )
-                }
-              />
+            <h2>Say Hi 👋</h2>
+            <div className="contactHolder">
+              <div className="contactText">
+                <FaEnvelope
+                  className="icon"
+                  onClick={() =>
+                    this.handleLinkClick("mailto:bengittins@live.com")
+                  }
+                />
+                bengittins@live.com
+              </div>
+              <div className="contactText">
+                <FaGithub
+                  className="icon"
+                  onClick={() =>
+                    this.handleLinkClick("https://github.com/squareben1")
+                  }
+                />
+                github.com/squareben1
+              </div>
+              <div className="contactText">
+                <FaLinkedin
+                  className="icon"
+                  onClick={() =>
+                    this.handleLinkClick(
+                      "https://www.linkedin.com/in/bengittins/"
+                    )
+                  }
+                />
+                linkedin.com/in/bengittins
+                <div className="contactText">
+                  <FaFilePdf
+                    className="icon"
+                    onClick={() =>
+                      this.handleLinkClick(
+                        "https://drive.google.com/file/d/1MdtPlNRViuSqdySrFCISeMJ9eceFRDv-/view?usp=sharing"
+                      )
+                    }
+                  />
+                  CV
+                </div>
+              </div>
             </div>
             <form
               id="contactForm"
