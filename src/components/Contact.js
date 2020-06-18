@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
 import "../styles/contact.scss";
 
 class Contact extends React.Component {
@@ -14,7 +14,9 @@ class Contact extends React.Component {
           <div className="contactContainer">
             <div className="contactText">
               <h2>Contact</h2>
+              <br></br>
               You can reach me at bengittins@live.com or at the links below:
+              <br></br>
               <br></br>
               <FaGithub
                 className="icon"
@@ -27,6 +29,14 @@ class Contact extends React.Component {
                 onClick={() =>
                   this.handleLinkClick(
                     "https://www.linkedin.com/in/bengittins/"
+                  )
+                }
+              />
+              <FaFilePdf
+                className="icon"
+                onClick={() =>
+                  this.handleLinkClick(
+                    "https://drive.google.com/file/d/1MdtPlNRViuSqdySrFCISeMJ9eceFRDv-/view?usp=sharing"
                   )
                 }
               />
@@ -69,8 +79,6 @@ class Contact extends React.Component {
               />
               <input className="submitForm" type="submit" value="Send" />
             </form>
-
-            
           </div>
         </section>
       </>
