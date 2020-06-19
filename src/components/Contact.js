@@ -12,7 +12,7 @@ class Contact extends React.Component {
       <>
         <section className="contactSection" id="contact">
           <div className="contactContainer">
-            <h1>Say Hi 👋</h1>
+            <h1>Say Hi <span role="img" aria-label="waveEmoji">👋</span></h1>
             <div className="contactHolder">
               <div className="contactText">
                 <FaEnvelope
