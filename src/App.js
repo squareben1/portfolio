@@ -9,8 +9,8 @@ import "./styles/main.scss";
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <header className="App-header">
+        <NavBar />
         <Home />
         <About />
         <Projects />
