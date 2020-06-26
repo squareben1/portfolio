@@ -18,10 +18,11 @@ body {
 }
 
 .homeSection {
-  top: 40px;
+  position: relative;
+  top: 35px;
   display: flex;
-  justify-content: center;
   font-size: 30px;
+  height: calc(100vh - 35px);
   .homeTextContainer {
     align-items: center;
     vertical-align: middle;
@@ -30,14 +31,24 @@ body {
     margin: auto;
     width: 50%;
   }
-  img.profilePic {
-    max-height: 100vh;
-    display: flex;
-    max-width: 50%;
+
+  .profilePic {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    img {
+      position: relative;
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
   }
 }
 
+
 section.aboutSection {
+  position: relative;
   padding-top: 70px;
   padding: 105px;
   display: flex;
@@ -61,7 +72,7 @@ section.aboutSection {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-
+      
     }
   }
 }

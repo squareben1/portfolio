@@ -12,7 +12,6 @@ body {
   display: flex;
   background: white;
   color: white;
-
   justify-content: center;
   box-sizing: border-box;
   border-bottom: 1px solid lightgrey;
@@ -40,6 +39,7 @@ body {
   &:hover {
     background-color: lightgrey;
   }
+  
 }
 
 .navLink {

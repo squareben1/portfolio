@@ -15,7 +15,9 @@ class Home extends React.Component {
             <br></br>
             I'm a Full Stack Software Developer.
           </div>
-          <img className="profilePic" src={profilePic} alt="profilePic" />
+          <div className="profilePic">
+            <img src={profilePic} alt="profilePic" />
+          </div>
         </section>
       </>
     );

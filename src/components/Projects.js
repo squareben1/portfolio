@@ -8,64 +8,67 @@ class Projects extends React.Component {
       <>
         <section className="projectsNavSection"></section>
 
-        <section className="projectsSection">
-          <h1>Projects</h1>
-          <div className="projContainer">
-            <div className="projectContainer">
-              <h2>DINO RUN</h2>
-              <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="middle">
-                <div className="text">Dino Run</div>
-              </div>
-            </div>
-            <div className="projectContainer">
-              <h2>DINO RUN</h2>
-              <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="middle">
-                <div className="text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Possimus voluptate obcaecati nesciunt porro laudantium,
-                    autem expedita cum fugit cupiditate itaque debitis sint,
-                    tenetur accusamus, omnis!
-                  </p>
+        <h1>Projects</h1>
 
-                  <p>
-                    Est, dolorum, inventore? Soluta illo necessitatibus facilis
-                    omnis nam ipsam, laudantium voluptas veniam ipsa. Ea
-                    debitis, explicabo! Fugit repudiandae ex unde assumenda,
-                    numquam aliquam architecto?
-                  </p>
-                </div>
+        <section className="projectsSection">
+          <div className="projectContainer">
+            <h2>DINO RUN</h2>
+            <div className="coverImageContainer">
+              <img src={DinoRun} className="projectImage" alt="Dino Run" />
+              <div className="coverImageText">Dino Run</div>
+            </div>
+          </div>
+
+          <div className="projectContainer">
+            <h2>DINO RUN</h2>
+            <div className="coverImageContainer">
+              <img src={DinoRun} className="projectImage" alt="Dino Run" />
+              <div className="coverImageText">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Possimus voluptate obcaecati nesciunt porro laudantium, autem
+                  expedita cum fugit cupiditate itaque debitis sint, tenetur
+                  accusamus, omnis!
+                </p>
+                <p>
+                  Est, dolorum, inventore? Soluta illo necessitatibus facilis
+                  omnis nam ipsam, laudantium voluptas veniam ipsa. Ea debitis,
+                  explicabo! Fugit repudiandae ex unde assumenda, numquam
+                  aliquam architecto?
+                </p>
               </div>
             </div>
-            <div className="projectContainer">
-              <h2>DINO RUN</h2>
+          </div>
+
+          <div className="projectContainer">
+            <h2>DINO RUN</h2>
+            <div className="coverImageContainer">
               <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="middle">
-                <div className="text">Dino Run</div>
-              </div>
+              <div className="coverImageText">Dino Run</div>
             </div>
-            <div className="projectContainer">
-              <h2>DINO RUN</h2>
+          </div>
+
+          <div className="projectContainer">
+            <h2>DINO RUN</h2>
+            <div className="coverImageContainer">
               <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="middle">
-                <div className="text">Dino Run</div>
-              </div>
+              <div className="coverImageText">Dino Run</div>
             </div>
-            <div className="projectContainer">
-              <h2>DINO RUN</h2>
+          </div>
+
+          <div className="projectContainer">
+            <h2>DINO RUN</h2>
+            <div className="coverImageContainer">
               <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="middle">
-                <div className="text">Dino Run</div>
-              </div>
+              <div className="coverImageText">Dino Run</div>
             </div>
-            <div className="projectContainer">
-              <h2>DINO RUN</h2>
+          </div>
+
+          <div className="projectContainer">
+            <h2>DINO RUN</h2>
+            <div className="coverImageContainer">
               <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="middle">
-                <div className="text">Dino Run</div>
-              </div>
+              <div className="coverImageText">Dino Run</div>
             </div>
           </div>
         </section>
