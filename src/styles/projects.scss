@@ -1,4 +1,5 @@
 $breakpoint-ipad: 768px;
+$breakpoint-iphone6-7-8: 414px;
 
 .projectsSection {
   padding-top: 50px;
@@ -64,7 +65,7 @@ h2 {
   // display: block;
   min-width: 750px;
   min-height: 330.7px;
-  height: auto;
+  // height: auto;
   // padding: 16px 32px;
 }
 
@@ -88,5 +89,34 @@ h2 {
 
   .projectImage {
     max-width: 700px;
+  }
+}
+
+@media (max-width: $breakpoint-iphone6-7-8 414px) {
+  .projContainer {
+    padding: 30px;
+    display: column;
+  }
+
+  .projectImage {
+    max-width: 400px;
+    margin: 1px;
+  }
+
+  div.middle {
+    position: absolute;
+    transform: translate(-20%, -20%);
+    -ms-transform: translate(-20%, -20%);
+    text-align: justify;
+    align-items: center;
+    max-width: 400px;
+    min-width: 300px;
+  }
+
+  div.text {
+    font-size: 10px;
+    // max-width: 300px;
+    min-width: 300px;
+    min-height: 280.7px;
   }
 }

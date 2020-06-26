@@ -1,5 +1,6 @@
 $breakpoint-ipadpro: 1024px;
 $breakpoint-ipad: 768px;
+$breakpoint-iphone6-7-8: 414px;
 
 .contactContainer {
   padding: 0px;
@@ -142,5 +143,52 @@ textarea {
     div.contactHolder {
       padding-left: 35px;
     }
+  }
+}
+
+@media (max-width: $breakpoint-iphone6-7-8 414px) {
+  .contactSection {
+    font-size: 20px;
+    div.contactHolder {
+      // width: 50%;
+      div.contactText {
+        padding: 30px 20px 20px;
+        font-size: 20px;
+      }
+    }
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 10px;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+
+  #contactForm {
+    vertical-align: middle;
+    margin: 0 auto;
+    float: right;
+    padding: 100px;
+    padding-left: 0px;
+    box-sizing: content-box;
+    min-width: 300px;
+  }
+
+  #contactForm input,
+  textarea {
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+    width: 90%;
+    max-width: 400px;
+  }
+
+  #contactForm textarea {
+    height: 150px;
   }
 }

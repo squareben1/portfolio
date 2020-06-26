@@ -18,23 +18,22 @@ body {
 }
 
 .homeSection {
-  padding-top: 25px;
+  top: 40px;
   display: flex;
   justify-content: center;
   font-size: 30px;
-  div.homeTextContainer {
-    display: inline-block;
+  .homeTextContainer {
     align-items: center;
     vertical-align: middle;
     line-height: normal;
     text-align: center;
     margin: auto;
     width: 50%;
-    img.profilePic {
-      max-height: 1000px;
-      display: flex;
-      max-width: 50%;
-    }
+  }
+  img.profilePic {
+    max-height: 100vh;
+    display: flex;
+    max-width: 50%;
   }
 }
 
@@ -106,7 +105,6 @@ h2 {
   opacity: 0.9;
   padding-bottom: 0px;
   .skillDiv {
-    
     padding: 15px;
     font-size: 18px;
     .skillIcon {
@@ -206,6 +204,7 @@ h2 {
   section.homeSection {
     height: 100vh;
     width: 100%;
+    // padding: 10px;
     padding-top: 35px;
     
     div.homeTextContainer {
@@ -215,31 +214,57 @@ h2 {
       vertical-align: middle;
       line-height: normal;
       text-align: center;
-      padding: 50px;
+      padding: 40px;
     }
     img.profilePic {
       display: flex;
       // min-height: ;
       max-width: 414px;
-      min-height: 380px;
+      min-height: 30px;
     }
   }
 
   section.aboutSection {
     margin: 0;
+    padding: 10px;
     padding-bottom: 20px;
     div.aboutContainer {
       display: flex;
       flex-direction: column-reverse;
       div.aboutTextContainer {
+        padding-top: 70px;
+        // padding-bottom: 50px;
         width: auto;
-        font-size: 28px;
+        font-size: 20px;
       }
     }
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   div.aboutSkill {
     // width: auto;
     max-width: fill;
+  }
+
+  .faImages {
+    // padding: 10%;
+    .icon {
+      height: 40px;
+    }
+  }
+
+  .aboutSkill {
+    .skillDiv {
+      padding: 10px;
+      font-size: 14px;
+      .skillIcon {
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+      }
+    }
   }
 }
