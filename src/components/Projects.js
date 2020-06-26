@@ -7,7 +7,6 @@ class Projects extends React.Component {
     return (
       <>
         <section className="projectsNavSection"></section>
-
         <h1>Projects</h1>
 
         <section className="projectsSection">

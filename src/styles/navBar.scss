@@ -1,4 +1,4 @@
-$breakpoint-iphone6-7-8: 414px;
+$breakpoint-iphone6-7-8: 767px;
 
 body {
   margin: 0;
@@ -39,7 +39,7 @@ body {
   &:hover {
     background-color: lightgrey;
   }
-  
+
 }
 
 .navLink {
