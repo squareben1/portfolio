@@ -2,11 +2,10 @@ $breakpoint-ipad: 1200px;
 $breakpoint-iphone6-7-8: 767px;
 
 .contactSection {
-  height: 100vh;
+  padding: 50px;
   position: relative;
   display: flex;
   width: 100%;
-  // justify-content: center;
   flex-direction: column;
   text-align: center;
   h1 {
@@ -42,7 +41,6 @@ $breakpoint-iphone6-7-8: 767px;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
   padding: 30px 30px;
   padding-left: 15%;
 
@@ -134,111 +132,3 @@ textarea {
   background-color: lightgrey;
 }
 
-::-webkit-input-placeholder {
-  color: #777;
-}
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #777;
-}
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #777;
-}
-
-:-ms-input-placeholder {
-  color: #777;
-}
-
-// @media (max-width: $breakpoint-ipadpro) {
-//   .contactSection {
-//     padding-top: 10px;
-//     div.contactHolder {
-//       // display: column;
-
-//       // background-color: red;
-//       line-height: normal;
-//       text-align: left;
-//       margin: 0px;
-//       width: 50%;
-//       padding: 100px 0px 0px;
-//       padding-left: 70px;
-//       div.contactText {
-//         display: row;
-//         line-height: normal;
-//         text-align: justify;
-//         margin: auto;
-//         margin: 0px;
-//         width: 100%;
-//         padding: 0px 0px 0px;
-//       }
-//     }
-//   }
-//   div.contactContainer {
-//     padding: 10px;
-//     display: flex;
-//     flex-direction: column;
-//     margin: 0px;
-//   }
-
-//   #contactForm {
-//     padding: 100px;
-//   }
-// }
-
-// @media (max-width: $breakpoint-ipadpro) {
-//   .contactSection {
-//     div.contactHolder {
-//       padding-left: 35px;
-//     }
-//   }
-// }
-
-// @media (max-width: $breakpoint-iphone6-7-8 414px) {
-//   .contactSection {
-//     font-size: 20px;
-//     div.contactHolder {
-//       // width: 50%;
-//       div.contactText {
-//         padding: 30px 20px 20px;
-//         font-size: 20px;
-//       }
-//     }
-//     .icon {
-//       display: inline-block;
-//       vertical-align: middle;
-//       padding: 10px;
-//       height: 50px;
-//       width: 50px;
-//       cursor: pointer;
-//       &:hover {
-//         color: grey;
-//       }
-//     }
-//   }
-
-//   #contactForm {
-//     vertical-align: middle;
-//     margin: 0 auto;
-//     float: right;
-//     padding: 100px;
-//     padding-left: 0px;
-//     box-sizing: content-box;
-//     min-width: 300px;
-//   }
-
-//   #contactForm input,
-//   textarea {
-//     display: block;
-//     margin: 0 auto;
-//     padding: 1em;
-//     width: 90%;
-//     max-width: 400px;
-//   }
-
-//   #contactForm textarea {
-//     height: 150px;
-//   }
-// }

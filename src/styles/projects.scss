@@ -3,7 +3,7 @@ $breakpoint-iphone6-7-8: 767px;
 
 .projectsSection {
   position: relative;
-  // padding-top: 50px;
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
@@ -12,15 +12,6 @@ $breakpoint-iphone6-7-8: 767px;
   margin: auto auto;
   
 }
-
-// .projContainer {
-//   padding: 30px;
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: center;
-
-// }
 
 .projectContainer {
   box-sizing: border-box;
