@@ -2,6 +2,8 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaFilePdf, FaEnvelope } from "react-icons/fa";
 import "../styles/contact.scss";
 
+//   "https://je9kq5twqc.execute-api.eu-west-2.amazonaws.com/dev/email/send";
+
 class Contact extends React.Component {
   handleLinkClick = (url) => {
     window.open(url, "_blank");
@@ -11,11 +13,14 @@ class Contact extends React.Component {
     return (
       <>
         <section className="contactSection" id="contact">
-
-          <h1>Say Hi <span role="img" aria-label="waveEmoji">👋</span></h1>
+          <h1>
+            Say Hi{" "}
+            <span role="img" aria-label="waveEmoji">
+              👋
+            </span>
+          </h1>
 
           <div className="contactContainer">
-
             <div className="contactHolder">
               <div className="contactText">
                 <FaEnvelope
@@ -24,7 +29,7 @@ class Contact extends React.Component {
                     this.handleLinkClick("mailto:bengittins@live.com")
                   }
                 />
-                 bengittins@live.com
+                bengittins@live.com
               </div>
               <div className="contactText">
                 <FaGithub
@@ -33,7 +38,7 @@ class Contact extends React.Component {
                     this.handleLinkClick("https://github.com/squareben1")
                   }
                 />
-                 github.com/squareben1
+                github.com/squareben1
               </div>
               <div className="contactText">
                 <FaLinkedin
@@ -44,24 +49,25 @@ class Contact extends React.Component {
                     )
                   }
                 />
-                 linkedin.com/in/bengittins
-                 </div>
-                <div className="contactText">
-                  <FaFilePdf
-                    className="icon"
-                    onClick={() =>
-                      this.handleLinkClick(
-                        "https://drive.google.com/file/d/1MdtPlNRViuSqdySrFCISeMJ9eceFRDv-/view?usp=sharing"
-                      )
-                    }
-                  />
-                  CV
-                </div>
+                linkedin.com/in/bengittins
               </div>
+              <div className="contactText">
+                <FaFilePdf
+                  className="icon"
+                  onClick={() =>
+                    this.handleLinkClick(
+                      "https://drive.google.com/file/d/1MdtPlNRViuSqdySrFCISeMJ9eceFRDv-/view?usp=sharing"
+                    )
+                  }
+                />
+                CV
+              </div>
+            </div>
+
             <form
               id="contactForm"
-              onSubmit="return validate()"
-              action="contact.php"
+              // onSubmit={this.formSumbit}
+              action="https://4npa3d11pe.execute-api.eu-west-2.amazonaws.com/dev/email/send/formencoded"
               method="post"
             >
               <input
@@ -83,8 +89,8 @@ class Contact extends React.Component {
               />
               <textarea
                 className="formInput"
-                name="message"
-                id="message"
+                name="content"
+                id="content"
                 placeholder="Message?"
               ></textarea>
 
