@@ -1541,6 +1541,13 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.9.2.tgz#ace1880c03594cc3e80206d96847157d8e7fa349"
   integrity sha512-bnoqK579sAYrQbp73wwglccjJ4sfRdKU7WNEZ5FW4K2U6Kc0/eZ5kvXG0JKsEKFB50zrFmfFt52/cvBbZa7eXg==
 
+"@types/nodemailer@^4.6.5":
+  version "4.6.8"
+  resolved "https://registry.yarnpkg.com/@types/nodemailer/-/nodemailer-4.6.8.tgz#c14356e799fe1d4ee566126f901bc6031cc7b1b5"
+  integrity sha512-IX1P3bxDP1VIdZf6/kIWYNmSejkYm9MOyMEtoDFi4DVzKjJ3kY4GhOcOAKs6lZRjqVVmF9UjPOZXuQczlpZThw==
+  dependencies:
+    "@types/node" "*"
+
 "@types/parse-json@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
@@ -1556,7 +1563,7 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@types/react-dom@*":
+"@types/react-dom@*", "@types/react-dom@>= 15":
   version "16.9.8"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.8.tgz#fe4c1e11dfc67155733dfa6aa65108b4971cb423"
   integrity sha512-ykkPQ+5nFknnlU6lDd947WbQ6TE3NNzbQAkInC2EKY1qeYdTKp7onFusmYZb+ityzx2YviqT6BXSu+LyWWJwcA==
@@ -1567,6 +1574,14 @@
   version "16.9.36"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.36.tgz#ade589ff51e2a903e34ee4669e05dbfa0c1ce849"
   integrity sha512-mGgUb/Rk/vGx4NCvquRuSH0GHBQKb1OqpGS9cT9lFxlTLHZgkksgI60TuIxubmn7JuCb+sENHhQciqa0npm0AQ==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
+"@types/react@>= 15":
+  version "16.9.41"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.41.tgz#925137ee4d2ff406a0ecf29e8e9237390844002e"
+  integrity sha512-6cFei7F7L4wwuM+IND/Q2cV1koQUvJ8iSV+Gwn0c3kvABZ691g7sp3hfEQHOUBJtccl1gPi+EyNjMIl9nGA0ug==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -7253,6 +7268,20 @@ node-sass@^4.14.1:
     sass-graph "2.2.5"
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
+
+nodemailer-react@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/nodemailer-react/-/nodemailer-react-0.1.0.tgz#9a0f6e17cd2544e3a751ab1b2f6489e34e0a4924"
+  integrity sha512-iZRjfrKnUW2yzJac4+n7WSWVoxbcPQkyBxfyMHDkZh8quj253qCSDY/+mJCxEBFnJrlpoN53PUetbELNZFhA9Q==
+  dependencies:
+    "@types/nodemailer" "^4.6.5"
+    "@types/react" ">= 15"
+    "@types/react-dom" ">= 15"
+
+nodemailer@^6.4.10:
+  version "6.4.10"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.4.10.tgz#f4c8dc7991c57f41fd081bef224ef01f7065143d"
+  integrity sha512-j+pS9CURhPgk6r0ENr7dji+As2xZiHSvZeVnzKniLOw1eRAyM/7flP0u65tCnsapV8JFu+t0l/5VeHsCZEeh9g==
 
 "nopt@2 || 3":
   version "3.0.6"

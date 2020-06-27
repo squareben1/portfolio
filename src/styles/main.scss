@@ -23,8 +23,9 @@ body {
   display: flex;
   font-size: 30px;
   height: calc(100vh - 35px);
-
-
+  @media (max-width: $breakpoint-ipadpro) {
+    top: 0px;
+  }
   .homeTextContainer {
     align-items: center;
     vertical-align: middle;
