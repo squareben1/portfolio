@@ -1,18 +1,88 @@
-'use strict';
+// define the options for your email and domain
+const options = {
+  myEmail: "bengittins@live.com", // myEmail is the email address you enabled in AWS SES in the AWS Console
+  myDomain: "*" // add the domain of your website or '*' if you want to accept requests from any domain
+}
+ 
+// initialize the function
+const { sendJSON, sendFormEncoded } = require('lambda-mailer')(options)
+ 
+// Content-Type: application/json
+// The event.body needs to be a JSON object with 3 properties
+// - email
+// - name
+// - content
+module.exports.sendJSON = sendJSON
+ 
+// Content-Type: application/x-www-form-urlencoded
+// The event.body needs to a URI encoded string with 3 parameters
+// - email
+// - name
+// - content
+module.exports.sendFormEncoded = sendFormEncoded
 
-module.exports.hello = async event => {
-  return {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        message: 'Go Serverless v1.0! Your function executed successfully!',
-        input: event,
-      },
-      null,
-      2
-    ),
-  };
+// const aws = require('aws-sdk')
+// const ses = new aws.SES()
+// const myEmail = process.env.EMAIL
+// const myDomain = process.env.DOMAIN
 
-  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
-};
+// function generateResponse (code, payload) {
+//   return {
+//     statusCode: code,
+//     headers: {
+//       'Access-Control-Allow-Origin': myDomain,
+//       'Access-Control-Allow-Headers': 'x-requested-with',
+//       'Access-Control-Allow-Credentials': true
+//     },
+//     body: JSON.stringify(payload)
+//   }
+// }
+
+// function generateError (code, err) {
+//   console.log(err)
+//   return {
+//     statusCode: code,
+//     headers: {
+//       'Access-Control-Allow-Origin': myDomain,
+//       'Access-Control-Allow-Headers': 'x-requested-with',
+//       'Access-Control-Allow-Credentials': true
+//     },
+//     body: JSON.stringify(err.message)
+//   }
+// }
+
+// function generateEmailParams (body) {
+//   const { email, name, content } = JSON.parse(body)
+//   console.log(email, name, content)
+//   if (!(email && name && content)) {
+//     throw new Error('Missing parameters! Make sure to add parameters \'email\', \'name\', \'content\'.')
+//   }
+
+//   return {
+//     Source: myEmail,
+//     Destination: { ToAddresses: [myEmail] },
+//     ReplyToAddresses: [email],
+//     Message: {
+//       Body: {
+//         Text: {
+//           Charset: 'UTF-8',
+//           Data: `Message sent from email ${email} by ${name} \nContent: ${content}`
+//         }
+//       },
+//       Subject: {
+//         Charset: 'UTF-8',
+//         Data: `You received a message from ${myDomain}!`
+//       }
+//     }
+//   }
+// }
+
+// module.exports.send = async (event) => {
+//   try {
+//     const emailParams = generateEmailParams(event.body)
+//     const data = await ses.sendEmail(emailParams).promise()
+//     return generateResponse(200, data)
+//   } catch (err) {
+//     return generateError(500, err)
+//   }
+// }

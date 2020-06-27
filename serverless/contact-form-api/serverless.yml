@@ -1,14 +1,18 @@
-service: contact-form-api
+service: lambda-mailer
 
 custom:
   secrets: ${file(secrets/secrets.json)}
+  # RE SECRETS.JSON: While testing you can keep the domain as '*',
+  # however, make sure to change this to your actual
+  # domain in production. The EMAIL field should contain the
+  # email you verified with AWS SES.
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs12.x
   stage: ${self:custom.secrets.NODE_ENV}
   region: eu-west-2
-  environment: 
+  environment:
     NODE_ENV: ${self:custom.secrets.NODE_ENV}
     EMAIL: ${self:custom.secrets.EMAIL}
     DOMAIN: ${self:custom.secrets.DOMAIN}
@@ -19,10 +23,25 @@ provider:
       Resource: "*"
 
 functions:
-  send:
-    handler: handler.send
+  sendJSON:
+    handler: handler.sendJSON
     events:
       - http:
-          path: email/send
+          path: email/send/json
           method: post
           cors: true
+  sendFormEncoded:
+    handler: handler.sendFormEncoded
+    events:
+      - http:
+          path: email/send/formencoded
+          method: post
+          cors: true
+
+  # send:
+  #   handler: handler.send
+  #   events:
+  #     - http:
+  #         path: email/send/json
+  #         method: post
+  #         cors: true
