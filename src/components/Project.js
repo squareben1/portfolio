@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import "../styles/projects.scss";
 
 const Project = (props) => {
@@ -9,7 +10,8 @@ const Project = (props) => {
         <div className="coverImageContainer">
           <img src={props.image} className="projectImage" alt="ProjectImage" />
           <div className="coverImageText" dangerouslySetInnerHTML={{__html: props.text}}></div>
-          {/* <div className="coverImageText">{props.text}</div> */}
+          {/* <FaExternalLinkAlt /> */}
+          {/* need to think of a way to render icons in the text */}
         </div>
       </div>
     </>

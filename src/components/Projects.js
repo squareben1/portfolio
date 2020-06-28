@@ -18,64 +18,37 @@ class Projects extends React.Component {
         <h1>Projects</h1>
 
         <section className="projectsSection">
+          {/* need to procedurally generate the projects from data/projects.js */}
           <Project
             title={this.state.title}
             image={this.state.image}
             text={this.state.text}
           />
-
-          <div className="projectContainer">
-            <h2>DINO RUN</h2>
-            <div className="coverImageContainer">
-              <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="coverImageText">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Possimus voluptate obcaecati nesciunt porro laudantium, autem
-                  expedita cum fugit cupiditate itaque debitis sint, tenetur
-                  accusamus, omnis!
-                </p>
-                <p>
-                  Est, dolorum, inventore? Soluta illo necessitatibus facilis
-                  omnis nam ipsam, laudantium voluptas veniam ipsa. Ea debitis,
-                  explicabo! Fugit repudiandae ex unde assumenda, numquam
-                  aliquam architecto?
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="projectContainer">
-            <h2>DINO RUN</h2>
-            <div className="coverImageContainer">
-              <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="coverImageText">Dino Run</div>
-            </div>
-          </div>
-
-          <div className="projectContainer">
-            <h2>DINO RUN</h2>
-            <div className="coverImageContainer">
-              <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="coverImageText">Dino Run</div>
-            </div>
-          </div>
-
-          <div className="projectContainer">
-            <h2>DINO RUN</h2>
-            <div className="coverImageContainer">
-              <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="coverImageText">Dino Run</div>
-            </div>
-          </div>
-
-          <div className="projectContainer">
-            <h2>DINO RUN</h2>
-            <div className="coverImageContainer">
-              <img src={DinoRun} className="projectImage" alt="Dino Run" />
-              <div className="coverImageText">Dino Run</div>
-            </div>
-          </div>
+          <Project
+            title={this.state.title}
+            image={this.state.image}
+            text={this.state.text}
+          />
+          <Project
+            title={this.state.title}
+            image={this.state.image}
+            text={this.state.text}
+          />
+          <Project
+            title={this.state.title}
+            image={this.state.image}
+            text={this.state.text}
+          />
+          <Project
+            title={this.state.title}
+            image={this.state.image}
+            text={this.state.text}
+          />
+          <Project
+            title={this.state.title}
+            image={this.state.image}
+            text={this.state.text}
+          />
         </section>
       </>
     );

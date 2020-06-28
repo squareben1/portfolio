@@ -2,8 +2,6 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaFilePdf, FaEnvelope } from "react-icons/fa";
 import "../styles/contact.scss";
 
-//   "https://je9kq5twqc.execute-api.eu-west-2.amazonaws.com/dev/email/send";
-
 class Contact extends React.Component {
   handleLinkClick = (url) => {
     window.open(url, "_blank");
@@ -14,7 +12,7 @@ class Contact extends React.Component {
       <>
         <section className="contactSection" id="contact">
           <h1>
-            Say Hi{" "}
+            Say Hi
             <span role="img" aria-label="waveEmoji">
               👋
             </span>
@@ -63,11 +61,9 @@ class Contact extends React.Component {
                 CV
               </div>
             </div>
-
             <form
               id="contactForm"
-              // onSubmit={this.formSumbit}
-              action="https://4npa3d11pe.execute-api.eu-west-2.amazonaws.com/dev/email/send/formencoded"
+              action="https://whh0eei4ih.execute-api.eu-west-2.amazonaws.com/Prod/send"
               method="post"
             >
               <input
@@ -76,22 +72,22 @@ class Contact extends React.Component {
                 id="name"
                 name="name"
                 autoCorrect="off"
-                placeholder="Name?"
+                placeholder="Your Name..."
               />
               <input
                 className="formInput"
                 type="email"
-                name="email"
+                name="fromEmail"
                 id="email"
                 autoCapitalize="off"
                 autoCorrect="off"
-                placeholder="Email?"
+                placeholder="Your Email..."
               />
               <textarea
                 className="formInput"
-                name="content"
-                id="content"
-                placeholder="Message?"
+                name="message"
+                id="message"
+                placeholder="Message..."
               ></textarea>
 
               <br></br>
