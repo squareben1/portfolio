@@ -33,6 +33,16 @@ $breakpoint-iphone6-7-8: 767px;
   }
 }
 
+.projectHeader {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.projectLinks {
+  height: 20px;
+}
+
 .coverImageContainer {
   position: relative;
   width: 100%;
@@ -83,51 +93,3 @@ h2 {
   text-align: center;
   padding-bottom: 10px;
 }
-
-// @media (max-width: $breakpoint-ipad) {
-//   div.text {
-//     min-width: 650px;
-//     min-height: 280.7px;
-//   }
-//   div.middle {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     -ms-transform: translate(-50%, -50%);
-//   }
-//   div.projectImage {
-//     padding: 100px;
-//     max-width: 500px;
-//     align-items: center;
-//   }
-// }
-
-// @media (max-width: $breakpoint-iphone6-7-8 414px) {
-//   .projContainer {
-//     padding: 30px;
-//     display: column;
-//   }
-
-//   .projectImage {
-//     max-width: 400px;
-//     margin: 1px;
-//   }
-
-//   div.middle {
-//     position: absolute;
-//     transform: translate(-20%, -20%);
-//     -ms-transform: translate(-20%, -20%);
-//     text-align: justify;
-//     align-items: center;
-//     max-width: 400px;
-//     min-width: 300px;
-//   }
-
-//   div.text {
-//     font-size: 10px;
-//     // max-width: 300px;
-//     min-width: 300px;
-//     min-height: 280.7px;
-//   }
-// }
