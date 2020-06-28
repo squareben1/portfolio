@@ -36,23 +36,25 @@ $breakpoint-iphone6-7-8: 767px;
 .projectHeader {
   display: flex;
   justify-content: space-between;
-  
-  // vertical-align: middle;
+  // vertical-align: text-bottom;
+  // position: relative;
+
   .projectLinks {
     .projectIcon {
       padding: 5px;
-      height: 30px;
-      width: 30px;
-      // color: black;
-      cursor: pointer;
+      height: 35px;
+      width: 35px;
+      @media (max-width: $breakpoint-iphone6-7-8) {
+        height: 28px;
+        width: 28px;
+      }
       &:hover {
         color: grey;
+        cursor: pointer;
       }
     }
   }
 }
-
-
 
 .coverImageContainer {
   position: relative;
@@ -68,10 +70,15 @@ $breakpoint-iphone6-7-8: 767px;
         font-size: 15px;
         padding: 5px;
       }
-      // @media (max-width: $breakpoint-ipad) {
-      //   font-size: 20px;
-      // }
     }
+  }
+}
+
+.projectTitle {
+  bottom: 0;
+  font-size: 32px;
+  @media (max-width: $breakpoint-iphone6-7-8) {
+    font-size: 20px;
   }
 }
 
@@ -102,5 +109,4 @@ h1 {
 
 h2 {
   text-align: center;
-  padding-bottom: 10px;
 }

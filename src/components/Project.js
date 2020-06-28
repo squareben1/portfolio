@@ -7,24 +7,30 @@ const Project = (props) => {
     window.open(url, "_blank");
   };
 
+  let websiteLink = null;
+
+  if (props.externalLink != null) {
+    websiteLink = (
+      <FaExternalLinkAlt
+      className="projectIcon"
+      onClick={() => handleLinkClick(props.externalLink)}
+    />
+    )
+  }
+
   return (
     <>
       <div className="projectContainer">
         <div className="projectHeader">
-          <h2>
+          {/* <h2> */}
             <div className="projectTitle">{props.title} </div>
-          </h2>
+          {/* </h2> */}
           <div className="projectLinks">
-            {/* <h2> */}
             <FaGithub
               className="projectIcon"
-              onClick={() => handleLinkClick("https://github.com/squareben1")}
+              onClick={() => handleLinkClick(props.gitHubLink)}
             />
-            <FaExternalLinkAlt
-              className="projectIcon"
-              onClick={() => handleLinkClick("https://github.com/squareben1")}
-            />
-            {/* </h2> */}
+            {websiteLink}
           </div>
         </div>
         <div className="coverImageContainer">

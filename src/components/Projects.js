@@ -1,32 +1,20 @@
 import React from "react";
-import Podcast from "../assets/upandcoming_guests.png";
-import DinoRun from "../assets/dinorun_win.png";
-import CatBook from "../assets/catbook.png";
 import Project from "./Project";
+import projectData from "../data/projectData";
+
 import "../styles/projects.scss";
 
-import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
+import DinoRun from "../assets/dinorun_win.png";
 
 class Projects extends React.Component {
   state = {
-    title: "DinoRun",
-    image: DinoRun,
-    text:
-      "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate obcaecati nesciunt porro laudantium, autem expedita cum fugit cupiditate itaque debitis sint, tenetur accusamus, omnis! </p> <p>Est, dolorum, inventore? Soluta illo necessitatibus facilis omnis nam ipsam, laudantium voluptas veniam ipsa. Ea debitis, explicabo! Fugit repudiandae ex unde assumenda, numquam aliquam architecto?</p>",
-    projects: [
-      {
-        title: "DinoRun",
-        image: DinoRun,
-        text:
-          "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate obcaecati nesciunt porro laudantium, autem expedita cum fugit cupiditate itaque debitis sint, tenetur accusamus, omnis! </p> <p>Est, dolorum, inventore? Soluta illo necessitatibus facilis omnis nam ipsam, laudantium voluptas veniam ipsa. Ea debitis, explicabo! Fugit repudiandae ex unde assumenda, numquam aliquam architecto?</p>",
-      },
-      {
-        title: "CatBook",
-        image: CatBook,
-        text:
-          "<p>Lorem catsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate obcaecati nesciunt porro laudantium, autem expedita cum fugit cupiditate itaque debitis sint, tenetur accusamus, omnis! </p> <p>Est, dolorum, inventore? Soluta illo necessitatibus facilis omnis nam ipsam, laudantium voluptas veniam ipsa. Ea debitis, explicabo! Fugit repudiandae ex unde assumenda, numquam aliquam architecto?</p>",
-      },
-    ],
+    // title: "DinoRun",
+    // image: DinoRun,
+    // externalLink: "https://technodactyl-studios-dinorun.herokuapp.com/",
+    // gitHubLink: "https://github.com/squareben1/technodactyl-studios-dinorun",
+    // text:
+    //   "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate obcaecati nesciunt porro laudantium, autem expedita cum fugit cupiditate itaque debitis sint, tenetur accusamus, omnis! </p> <p>Est, dolorum, inventore? Soluta illo necessitatibus facilis omnis nam ipsam, laudantium voluptas veniam ipsa. Ea debitis, explicabo! Fugit repudiandae ex unde assumenda, numquam aliquam architecto?</p>",
+    projects: projectData,
   };
 
   render() {
@@ -36,37 +24,17 @@ class Projects extends React.Component {
         <h1>Projects</h1>
 
         <section className="projectsSection">
-          {/* need to procedurally generate the projects from data/projects.js */}
-          <Project
-            title={this.state.title}
-            image={this.state.image}
-            text={this.state.text}
-          />
-          <Project
-            title={this.state.title}
-            image={this.state.image}
-            text={this.state.text}
-          />
-          <Project
-            title={this.state.title}
-            image={this.state.image}
-            text={this.state.text}
-          />
-          <Project
-            title={this.state.title}
-            image={this.state.image}
-            text={this.state.text}
-          />
-          <Project
-            title={this.state.title}
-            image={this.state.image}
-            text={this.state.text}
-          />
-          <Project
-            title={this.state.title}
-            image={this.state.image}
-            text={this.state.text}
-          />
+          {this.state.projects.map((project) => {
+            return (
+              <Project
+                title={project.title}
+                image={project.image}
+                text={project.text}
+                gitHubLink={project.gitHubLink}
+                externalLink={project.externalLink}
+              />
+            );
+          })}
         </section>
       </>
     );
