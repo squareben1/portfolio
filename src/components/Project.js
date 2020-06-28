@@ -12,9 +12,10 @@ const Project = (props) => {
       <div className="projectContainer">
         <div className="projectHeader">
           <h2>
-            <div className="projectTitle">{props.title}</div>
+            <div className="projectTitle">{props.title} </div>
           </h2>
           <div className="projectLinks">
+            {/* <h2> */}
             <FaGithub
               className="projectIcon"
               onClick={() => handleLinkClick("https://github.com/squareben1")}
@@ -23,6 +24,7 @@ const Project = (props) => {
               className="projectIcon"
               onClick={() => handleLinkClick("https://github.com/squareben1")}
             />
+            {/* </h2> */}
           </div>
         </div>
         <div className="coverImageContainer">

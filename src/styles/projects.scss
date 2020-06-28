@@ -23,7 +23,7 @@ $breakpoint-iphone6-7-8: 767px;
   max-width: 45%;
   padding: 20px;
   justify-content: center;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   @media (max-width: $breakpoint-ipad) {
     max-width: 100%;
@@ -35,13 +35,24 @@ $breakpoint-iphone6-7-8: 767px;
 
 .projectHeader {
   display: flex;
-  flex-direction: row;
-  text-align: left;
+  justify-content: space-between;
+  
+  // vertical-align: middle;
+  .projectLinks {
+    .projectIcon {
+      padding: 5px;
+      height: 30px;
+      width: 30px;
+      // color: black;
+      cursor: pointer;
+      &:hover {
+        color: grey;
+      }
+    }
+  }
 }
 
-.projectLinks {
-  height: 20px;
-}
+
 
 .coverImageContainer {
   position: relative;
