@@ -36,7 +36,6 @@ class About extends React.Component {
                 minus? Ab earum cum nam at, quos id!
               </p>
               <div className="faImages">
-                {/* ADD MOUSE OVER ANIMATION */}
                 <FaGithub
                   className="icon"
                   onClick={() =>
@@ -48,14 +47,6 @@ class About extends React.Component {
                   onClick={() =>
                     this.handleLinkClick(
                       "https://www.linkedin.com/in/bengittins/"
-                    )
-                  }
-                />
-                <FaFilePdf
-                  className="icon"
-                  onClick={() =>
-                    this.handleLinkClick(
-                      "https://drive.google.com/file/d/1MdtPlNRViuSqdySrFCISeMJ9eceFRDv-/view?usp=sharing"
                     )
                   }
                 />

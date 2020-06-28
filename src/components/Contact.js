@@ -1,13 +1,29 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaFilePdf, FaEnvelope } from "react-icons/fa";
+import FlashMessage from "react-flash-message";
 import "../styles/contact.scss";
 
 class Contact extends React.Component {
+  state = {
+    formSubmitted: true,
+  };
   handleLinkClick = (url) => {
     window.open(url, "_blank");
   };
 
   render() {
+    let confirmed = null;
+
+    if (this.state.formSubmitted != null) {
+      confirmed = (
+        <div className="emailConfirmation">
+          <FlashMessage duration={6000} persistOnHover={true}>
+            <p>Thanks for your message, I'll be in touch soon.</p>
+          </FlashMessage>
+        </div>
+      );
+    }
+
     return (
       <>
         <section className="contactSection" id="contact">
@@ -64,6 +80,13 @@ class Contact extends React.Component {
             <form
               id="contactForm"
               action="https://whh0eei4ih.execute-api.eu-west-2.amazonaws.com/Prod/send"
+              onSubmit={
+                (console.log(this.state.formSubmitted),
+                () =>
+                  this.setState({
+                    formSubmitted: true,
+                  }))
+              }
               method="post"
             >
               <input
@@ -89,7 +112,6 @@ class Contact extends React.Component {
                 id="message"
                 placeholder="Message..."
               ></textarea>
-
               <br></br>
               <input
                 className="submitForm"
@@ -99,6 +121,7 @@ class Contact extends React.Component {
               <input className="submitForm" type="submit" value="Send" />
             </form>
           </div>
+          {confirmed}
         </section>
       </>
     );

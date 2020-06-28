@@ -4,16 +4,8 @@ import projectData from "../data/projectData";
 
 import "../styles/projects.scss";
 
-import DinoRun from "../assets/dinorun_win.png";
-
 class Projects extends React.Component {
   state = {
-    // title: "DinoRun",
-    // image: DinoRun,
-    // externalLink: "https://technodactyl-studios-dinorun.herokuapp.com/",
-    // gitHubLink: "https://github.com/squareben1/technodactyl-studios-dinorun",
-    // text:
-    //   "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate obcaecati nesciunt porro laudantium, autem expedita cum fugit cupiditate itaque debitis sint, tenetur accusamus, omnis! </p> <p>Est, dolorum, inventore? Soluta illo necessitatibus facilis omnis nam ipsam, laudantium voluptas veniam ipsa. Ea debitis, explicabo! Fugit repudiandae ex unde assumenda, numquam aliquam architecto?</p>",
     projects: projectData,
   };
 

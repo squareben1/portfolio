@@ -19,10 +19,10 @@ body {
 
 .homeSection {
   position: relative;
-  top: 35px;
+  top: 38px;
   display: flex;
   font-size: 30px;
-  height: calc(100vh - 35px);
+  height: calc(100vh - 38px);
   @media (max-width: $breakpoint-ipadpro) {
     top: 0px;
   }
