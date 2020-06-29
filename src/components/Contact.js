@@ -5,7 +5,7 @@ import "../styles/contact.scss";
 
 class Contact extends React.Component {
   state = {
-    formSubmitted: true,
+    formSubmitted: null,
   };
   handleLinkClick = (url) => {
     window.open(url, "_blank");
@@ -17,7 +17,7 @@ class Contact extends React.Component {
     if (this.state.formSubmitted != null) {
       confirmed = (
         <div className="emailConfirmation">
-          <FlashMessage duration={6000} persistOnHover={true}>
+          <FlashMessage duration={5000} persistOnHover={true}>
             <p>Thanks for your message, I'll be in touch soon.</p>
           </FlashMessage>
         </div>

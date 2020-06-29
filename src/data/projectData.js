@@ -39,7 +39,7 @@ export default [
       "<p>Lorem catsum dolor sit amet, consectetur adipisicing elit. Possimus voluptate obcaecati nesciunt porro laudantium, autem expedita cum fugit cupiditate itaque debitis sint, tenetur accusamus, omnis! </p> <p>Est, dolorum, inventore? Soluta illo necessitatibus facilis omnis nam ipsam, laudantium voluptas veniam ipsa. Ea debitis, explicabo! Fugit repudiandae ex unde assumenda, numquam aliquam architecto?</p>",
   },
   {
-    title: "String Calc kata",
+    title: "String Calc Kata",
     image: StringCalc,
     externalLink: null,
     gitHubLink: "https://github.com/squareben1/string_calc_kata_js",
