@@ -6,13 +6,19 @@ $breakpoint-iphone6-7-8: 767px;
 }
 .projectsSection {
   position: relative;
-  padding-top: 40px;
+  // padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
   align-items: center;
   justify-content: center;
   margin: auto auto;
+}
+
+.projectsIntro {
+  font-size: 20px;
+  text-align: center;
+  padding: 40px;
 }
 
 .projectContainer {
@@ -36,9 +42,6 @@ $breakpoint-iphone6-7-8: 767px;
 .projectHeader {
   display: flex;
   justify-content: space-between;
-  // vertical-align: text-bottom;
-  // position: relative;
-
   .projectLinks {
     .projectIcon {
       padding: 5px;

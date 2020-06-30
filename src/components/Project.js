@@ -12,10 +12,11 @@ const Project = (props) => {
   if (props.externalLink != null) {
     websiteLink = (
       <FaExternalLinkAlt
-      className="projectIcon"
-      onClick={() => handleLinkClick(props.externalLink)}
-    />
-    )
+        className="projectIcon"
+        onClick={() => handleLinkClick(props.externalLink)}
+        title="Project URL"
+      />
+    );
   }
 
   return (
@@ -23,27 +24,23 @@ const Project = (props) => {
       <div className="projectContainer">
         <div className="projectHeader">
           {/* <h2> */}
-            <div className="projectTitle">{props.title} </div>
+          <div className="projectTitle">{props.title} </div>
           {/* </h2> */}
           <div className="projectLinks">
             <FaGithub
               className="projectIcon"
               onClick={() => handleLinkClick(props.gitHubLink)}
+              title="Project's GitHub Repo"
             />
             {websiteLink}
           </div>
         </div>
         <div className="coverImageContainer">
           <img src={props.image} className="projectImage" alt="ProjectImage" />
-          <div className="coverMouseOver">
-            <div
-              className="coverImageText"
-              dangerouslySetInnerHTML={{ __html: props.text }}
-            ></div>
-          </div>
-
-          {/* <FaExternalLinkAlt /> */}
-          {/* need to think of a way to render icons in the text */}
+          <div
+            className="coverImageText"
+            dangerouslySetInnerHTML={{ __html: props.text }}
+          ></div>
         </div>
       </div>
     </>

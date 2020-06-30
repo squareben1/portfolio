@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Fragment } from 'react';
+import Media from 'react-media';
 import Project from "./Project";
 import projectData from "../data/projectData";
 
@@ -14,6 +15,23 @@ class Projects extends React.Component {
       <>
         <section className="projectsNavSection"></section>
         <h1>Projects</h1>
+        <div className="projectsIntro">
+          <Media
+            queries={{
+              // small: "(max-width: 599px)",
+              medium: "(max-width: 1024px)",
+              large: "(min-width: 1200px)",
+            }}
+          >
+            {(matches) => (
+              <Fragment>
+                {/* {matches.small && <p>I am small!</p>} */}
+                {matches.medium && <p>Tap projects to find out what I learned from each.</p>}
+                {matches.large && <p>Mouse over projects to find out what I learned from each.</p>}
+              </Fragment>
+            )}
+          </Media>
+        </div>
 
         <section className="projectsSection">
           {this.state.projects.map((project) => {

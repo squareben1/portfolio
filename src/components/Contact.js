@@ -80,12 +80,10 @@ class Contact extends React.Component {
             <form
               id="contactForm"
               action="https://whh0eei4ih.execute-api.eu-west-2.amazonaws.com/Prod/send"
-              onSubmit={
-                (console.log(this.state.formSubmitted),
-                () =>
-                  this.setState({
-                    formSubmitted: true,
-                  }))
+              onSubmit={() =>
+                this.setState({
+                  formSubmitted: true,
+                })
               }
               method="post"
             >
