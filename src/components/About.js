@@ -41,6 +41,7 @@ class About extends React.Component {
                   onClick={() =>
                     this.handleLinkClick("https://github.com/squareben1")
                   }
+                  title="github.com/squareben1"
                 />
                 <FaLinkedin
                   className="icon"
@@ -49,6 +50,7 @@ class About extends React.Component {
                       "https://www.linkedin.com/in/bengittins/"
                     )
                   }
+                  title="linkedin.com/in/bengittins"
                 />
               </div>
             </div>
