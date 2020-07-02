@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Skills from "./Skills";
 
 class About extends React.Component {
