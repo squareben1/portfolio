@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1c94601.chunk.css",
-    "main.js": "/static/js/main.673049f9.chunk.js",
-    "main.js.map": "/static/js/main.673049f9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/js/2.4e6f41e9.chunk.js": "/static/js/2.4e6f41e9.chunk.js",
-    "static/js/2.4e6f41e9.chunk.js.map": "/static/js/2.4e6f41e9.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.8bec5f4963fc76216a25837107a6c996.js": "/precache-manifest.8bec5f4963fc76216a25837107a6c996.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.a1c94601.chunk.css.map": "/static/css/main.a1c94601.chunk.css.map",
-    "static/js/2.4e6f41e9.chunk.js.LICENSE.txt": "/static/js/2.4e6f41e9.chunk.js.LICENSE.txt",
-    "static/media/catbook.png": "/static/media/catbook.abaa2a96.png",
-    "static/media/connectz.png": "/static/media/connectz.88784e97.png",
-    "static/media/dinorun_win.png": "/static/media/dinorun_win.d1ec8b75.png",
-    "static/media/portfolio.png": "/static/media/portfolio.0c734184.png",
-    "static/media/profile_pic.png": "/static/media/profile_pic.ac2981e7.png",
-    "static/media/railsIcon.png": "/static/media/railsIcon.7956fc8e.png",
-    "static/media/stringcalc_jasmine.png": "/static/media/stringcalc_jasmine.b58dafc3.png",
-    "static/media/upandcoming_main.png": "/static/media/upandcoming_main.6d085fd9.png"
+    "main.css": "/www.bgittins.com/static/css/main.a1c94601.chunk.css",
+    "main.js": "/www.bgittins.com/static/js/main.37bb0270.chunk.js",
+    "main.js.map": "/www.bgittins.com/static/js/main.37bb0270.chunk.js.map",
+    "runtime-main.js": "/www.bgittins.com/static/js/runtime-main.6ed68662.js",
+    "runtime-main.js.map": "/www.bgittins.com/static/js/runtime-main.6ed68662.js.map",
+    "static/js/2.4e6f41e9.chunk.js": "/www.bgittins.com/static/js/2.4e6f41e9.chunk.js",
+    "static/js/2.4e6f41e9.chunk.js.map": "/www.bgittins.com/static/js/2.4e6f41e9.chunk.js.map",
+    "index.html": "/www.bgittins.com/index.html",
+    "precache-manifest.dc819db7ef967ed10c2e91bb0a14a869.js": "/www.bgittins.com/precache-manifest.dc819db7ef967ed10c2e91bb0a14a869.js",
+    "service-worker.js": "/www.bgittins.com/service-worker.js",
+    "static/css/main.a1c94601.chunk.css.map": "/www.bgittins.com/static/css/main.a1c94601.chunk.css.map",
+    "static/js/2.4e6f41e9.chunk.js.LICENSE.txt": "/www.bgittins.com/static/js/2.4e6f41e9.chunk.js.LICENSE.txt",
+    "static/media/catbook.png": "/www.bgittins.com/static/media/catbook.abaa2a96.png",
+    "static/media/connectz.png": "/www.bgittins.com/static/media/connectz.88784e97.png",
+    "static/media/dinorun_win.png": "/www.bgittins.com/static/media/dinorun_win.d1ec8b75.png",
+    "static/media/portfolio.png": "/www.bgittins.com/static/media/portfolio.0c734184.png",
+    "static/media/profile_pic.png": "/www.bgittins.com/static/media/profile_pic.ac2981e7.png",
+    "static/media/railsIcon.png": "/www.bgittins.com/static/media/railsIcon.7956fc8e.png",
+    "static/media/stringcalc_jasmine.png": "/www.bgittins.com/static/media/stringcalc_jasmine.b58dafc3.png",
+    "static/media/upandcoming_main.png": "/www.bgittins.com/static/media/upandcoming_main.6d085fd9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/runtime-main.6ed68662.js",
     "static/js/2.4e6f41e9.chunk.js",
     "static/css/main.a1c94601.chunk.css",
-    "static/js/main.673049f9.chunk.js"
+    "static/js/main.37bb0270.chunk.js"
   ]
 }
