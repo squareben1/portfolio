@@ -22,7 +22,7 @@ class NavBar extends React.Component {
           </div>
           <div className="navButton">
             <Link
-              to="aboutNavSection"
+              to="aboutSection"
               spy={true}
               smooth={true}
               delay={200}

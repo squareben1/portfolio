@@ -27,7 +27,7 @@ class Contact extends React.Component {
     return (
       <>
         <section className="contactSection" id="contact">
-          <h1>
+          <h1 className="title">
             Say Hi
             <span role="img" aria-label="waveEmoji">
               👋
