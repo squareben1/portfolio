@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a1c94601.chunk.css",
+    "main.js": "/portfolio/static/js/main.26938ded.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.26938ded.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.4e6f41e9.chunk.js": "/portfolio/static/js/2.4e6f41e9.chunk.js",
+    "static/js/2.4e6f41e9.chunk.js.map": "/portfolio/static/js/2.4e6f41e9.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.e221f79be324891ae92696493fe5d347.js": "/portfolio/precache-manifest.e221f79be324891ae92696493fe5d347.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.a1c94601.chunk.css.map": "/portfolio/static/css/main.a1c94601.chunk.css.map",
+    "static/js/2.4e6f41e9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4e6f41e9.chunk.js.LICENSE.txt",
+    "static/media/catbook.png": "/portfolio/static/media/catbook.abaa2a96.png",
+    "static/media/connectz.png": "/portfolio/static/media/connectz.88784e97.png",
+    "static/media/dinorun_win.png": "/portfolio/static/media/dinorun_win.d1ec8b75.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.0c734184.png",
+    "static/media/profile_pic.png": "/portfolio/static/media/profile_pic.ac2981e7.png",
+    "static/media/railsIcon.png": "/portfolio/static/media/railsIcon.7956fc8e.png",
+    "static/media/stringcalc_jasmine.png": "/portfolio/static/media/stringcalc_jasmine.b58dafc3.png",
+    "static/media/upandcoming_main.png": "/portfolio/static/media/upandcoming_main.6d085fd9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.4e6f41e9.chunk.js",
+    "static/css/main.a1c94601.chunk.css",
+    "static/js/main.26938ded.chunk.js"
+  ]
+}
