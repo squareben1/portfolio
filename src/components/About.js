@@ -15,7 +15,7 @@ class About extends React.Component {
           <div className="aboutContainer">
             <Skills />
             <div className="aboutTextContainer">
-              <h1>Full Stack Developer</h1>
+              <h1>About Me</h1>
               <p>
                 I’m a Full Stack Developer at Dignity Platform – an online skill
                 sharing marketplace where money paid goes directly to charities.
