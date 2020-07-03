@@ -12,6 +12,10 @@ $breakpoint-iphone6-7-8: 767px;
   h1 {
     position: relative;
   }
+  @media (max-width: $breakpoint-iphone6-7-8) {
+    flex-direction: column;
+    
+  }
 }
 
 

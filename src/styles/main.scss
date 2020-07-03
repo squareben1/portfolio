@@ -51,8 +51,9 @@ body {
 
 section.aboutSection {
   position: relative;
-  padding-top: 70px;
+  padding-top: 10px;
   padding: 105px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   text-align: justify;
@@ -93,6 +94,7 @@ h2 {
 
 .faImages {
   padding: 5%;
+  flex-direction: row;
   .icon {
     padding: 5px;
     height: 35px;
