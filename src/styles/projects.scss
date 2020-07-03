@@ -16,16 +16,16 @@ $breakpoint-iphone6-7-8: 767px;
 }
 
 .projectsIntro {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
-  padding: 40px;
+  padding: 18px;
   @media (max-width: $breakpoint-ipad) {
-    font-size: 20px;
+    font-size: 18px;
     padding: 25px;
   }
   @media (max-width: $breakpoint-iphone6-7-8) {
     font-size: 15px;
-    padding: 20px;
+    padding: 18px;
   }
 }
 
@@ -87,7 +87,7 @@ $breakpoint-iphone6-7-8: 767px;
 
 .projectTitle {
   bottom: 0;
-  font-size: 32px;
+  font-size: 1.8rem;
   @media (max-width: $breakpoint-iphone6-7-8) {
     font-size: 20px;
   }
