@@ -17,23 +17,29 @@ class About extends React.Component {
             <div className="aboutTextContainer">
               <h1>Full Stack Developer</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Possimus voluptate obcaecati nesciunt porro laudantium, autem
-                expedita cum fugit cupiditate itaque debitis sint, tenetur
-                accusamus, omnis!
+                I’m a Full Stack Developer at Dignity Platform – an online skill
+                sharing marketplace where money paid goes directly to charities.
               </p>
 
               <p>
-                Est, dolorum, inventore? Soluta illo necessitatibus facilis
-                omnis nam ipsam, laudantium voluptas veniam ipsa. Ea debitis,
-                explicabo! Fugit repudiandae ex unde assumenda, numquam aliquam
-                architecto?
+                Before joining Dignity, I worked in finance for 5 years – mostly
+                for big, traditional banks. During this time I came to realise
+                the companies that interested me most were FinTechs. Start-ups
+                like Monzo and Yolt weren’t bogged down by legacy software and
+                were free to leverage cutting edge tech to build the kind of
+                awesome personalised features that big banks never could.
               </p>
 
               <p>
-                Beatae minima, ipsam nisi rerum commodi. Culpa quod quibusdam,
-                odit ut! Reprehenderit officiis sint suscipit, neque, mollitia
-                minus? Ab earum cum nam at, quos id!
+                So, around March 2019, I decided to learn the tools to build
+                awesome things myself. I started learning Ruby online and had
+                soon enrolled at a coding bootcamp. I have been learning and
+                building things ever since; always looking for projects that
+                will help me learn and improve as much as possible.
+              </p>
+              <p>
+                Drop me a line to discuss working together or to ask about one
+                of my projects
               </p>
               <div className="faImages">
                 <FaGithub
