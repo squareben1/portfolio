@@ -4,9 +4,13 @@ $breakpoint-iphone6-7-8: 767px;
 .projectsNavSection {
   padding-top: 50px;
 }
+
 .projectsSection {
+  width: 100%;
+}
+
+.portfolioProjectsSection {
   position: relative;
-  // padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
@@ -15,17 +19,38 @@ $breakpoint-iphone6-7-8: 767px;
   margin: auto auto;
 }
 
-.projectsIntro {
-  font-size: 18px;
-  text-align: center;
-  padding: 18px;
+.projectsHeader {
+  display: flex;
+  flex-direction: column;
+  width: 87%;
+  @media (max-width: $breakpoint-ipad) {
+    width: 95%;
+  }
+  @media (max-width: $breakpoint-iphone6-7-8) {
+    width: 89%;
+  }
+}
+
+.h1 {
+  font-size: 1rem;
   @media (max-width: $breakpoint-ipad) {
     font-size: 18px;
     padding: 25px;
   }
   @media (max-width: $breakpoint-iphone6-7-8) {
+    // font-size: 15px;
+    padding-left: 18px;
+  }
+}
+
+.projectsIntro {
+  font-size: 18px;
+  @media (max-width: $breakpoint-ipad) {
+    font-size: 18px;
+  }
+  @media (max-width: $breakpoint-iphone6-7-8) {
     font-size: 15px;
-    padding: 18px;
+    // padding-left: 18px;
   }
 }
 
@@ -47,7 +72,7 @@ $breakpoint-iphone6-7-8: 767px;
   }
 }
 
-.projectHeader {
+.individualProjectHeader {
   display: flex;
   justify-content: space-between;
   .projectLinks {
@@ -112,12 +137,4 @@ $breakpoint-iphone6-7-8: 767px;
   opacity: 0;
   background: lightgrey;
   overflow-y: scroll;
-}
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
 }

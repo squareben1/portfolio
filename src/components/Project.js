@@ -22,7 +22,7 @@ const Project = (props) => {
   return (
     <>
       <div className="projectContainer">
-        <div className="projectHeader">
+        <div className="individualProjectHeader">
           {/* <h2> */}
           <div className="projectTitle">{props.title} </div>
           {/* </h2> */}

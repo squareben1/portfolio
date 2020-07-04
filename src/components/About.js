@@ -10,15 +10,14 @@ class About extends React.Component {
   render() {
     return (
       <>
-        {/* <section className="aboutNavSection"></section> */}
         <section className="aboutSection">
           <div className="aboutContainer">
             <Skills />
             <div className="aboutTextContainer">
               <h1 className="aboutTitle">About Me</h1>
               <p>
-                I’m a Developer at Dignity Platform – an online skill
-                sharing marketplace where money paid goes directly to charities.
+                I’m a Developer at Dignity Platform – an online skill sharing
+                marketplace where money paid goes directly to charities.
               </p>
 
               <p>
