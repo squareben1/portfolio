@@ -27,13 +27,7 @@ class Contact extends React.Component {
     return (
       <>
         <section className="contactSection" id="contact">
-          <h1 className="title">
-            Say Hi
-            <span role="img" aria-label="waveEmoji">
-              👋
-            </span>
-          </h1>
-
+          <h1 className="title">Contact</h1>Î
           <div className="contactContainer">
             <div className="contactHolder">
               <div className="contactText">
