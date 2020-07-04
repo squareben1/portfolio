@@ -16,6 +16,9 @@ body {
   box-sizing: border-box;
   border-bottom: 0.5px solid rgb(221, 221, 221);
   height: 35px;
+  @media (max-width: $breakpoint-iphone6-7-8) {
+    height: 50px;
+  }
 }
 
 .sticky {
@@ -31,16 +34,14 @@ body {
 .navButton {
   position: relative;
   flex: 1 1 100%; // responsive
-  max-width: 20%;
   height: 100%;
   font-size: 18px;
   color: black;
-  // text-align: center;
   &:hover {
     background-color: lightgrey;
   }
   @media (max-width: $breakpoint-iphone6-7-8) {
-    font-size: 15px;
+    font-size: 19px;
   }
 }
 
