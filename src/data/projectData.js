@@ -28,7 +28,7 @@ export default [
     externalLink: "https://upandcomingpodcast.co.uk/",
     gitHubLink: "https://github.com/squareben1/upandcoming-site",
     text:
-      "<p>I decided to rebuild the website for an entertainment industry podcast I run with my brother – mostly as an excuse to put my new React knowledge into practice.</p> <p>This site is currently under construction. I’m including it here anyway because it represents the first time, I have translated a professional designer’s plans into code. This is a challenge in its own right and is necessitating a fast improvement of my front-end skills.</p>",
+      "<p>I decided to rebuild the website for an entertainment industry podcast I run with my brother – mostly as an excuse to put my new React knowledge into practice.</p> <p>This site is currently under construction. I’m including it here anyway because it represents the first time, I have translated a professional designer’s plans into code. This is a challenge in its own right and is spurring on a fast improvement of my front-end skills.</p>",
   },
   {
     title: "Portfolio",
@@ -36,7 +36,7 @@ export default [
     externalLink: "https://bgittins.com/",
     gitHubLink: "https://github.com/squareben1/portfolio",
     text:
-      "<p>Site-ception! I learned a huge amount building the very site you’re on now. Its a fairly simple single page app, but is a more involved front-end project than those I have done previously. It really helped me figure out responsive design using breakpoints in Sass.</p> <p>The most interesting part of the project for me is the humble contact form in the section below. I had been meaning to learn about serverless architecture so decided to implement an AWS Lambda function for the form. After a lot of trial and error (during which time I basically built a server on the project – somewhat missing the point of the exercise) I ended up modifying an existing lambda function. I was really pleased with the result – give it a whirl, knowing any message I receive through my shiny serverless contact form will bring me disproportionate joy.</p>",
+      "<p>Site-ception! I learned a huge amount building the very site you’re on now. It's a fairly simple single page app, but is a more involved front-end project than those I have done previously. It really helped me figure out responsive design using breakpoints in Sass.</p> <p>The most interesting part of the project for me is the humble contact form in the section below. I had been meaning to learn about serverless architecture so decided to implement an AWS Lambda function for the form. After a lot of trial and error (during which time I basically built a server on the project – somewhat missing the point of the exercise) I ended up modifying an existing lambda function. I was really pleased with the result – give it a whirl, knowing any message I receive through my shiny serverless contact form will bring me disproportionate joy.</p>",
   },
   {
     title: "String Calc Kata",

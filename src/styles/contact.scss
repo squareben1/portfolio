@@ -3,17 +3,14 @@ $breakpoint-iphone6-7-8: 767px;
 
 .contactSection {
   padding-top: 50px;
-  position: relative;
   display: flex;
   width: 100%;
   max-height: 100vh;
   flex-direction: column;
-  // text-align: center;
   .title {
     padding-left: 58px;
     padding-bottom: 0px;
     display: flex;
-    // flex-direction: column;
     width: 87%;
     @media (max-width: $breakpoint-ipad) {
       width: 95%;
@@ -21,9 +18,6 @@ $breakpoint-iphone6-7-8: 767px;
     @media (max-width: $breakpoint-iphone6-7-8) {
       width: 89%;
     }
-  }
-  @media (max-width: $breakpoint-iphone6-7-8) {
-    flex-direction: column;
   }
 }
 
@@ -35,7 +29,6 @@ $breakpoint-iphone6-7-8: 767px;
   align-items: center;
   vertical-align: middle;
   font-size: 22px;
-
   @media (max-width: $breakpoint-ipad) {
     flex-direction: column;
     font-size: 22px;
@@ -76,6 +69,10 @@ $breakpoint-iphone6-7-8: 767px;
   text-align: justify;
   min-width: 50%;
   padding: 20px;
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
   @media (max-width: $breakpoint-ipad) {
     min-width: 60%;
     max-width: 60%;

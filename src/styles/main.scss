@@ -91,12 +91,6 @@ h1 {
   float: left;
 }
 
-h2 {
-  font-size: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
 .faImages {
   flex-direction: row;
   .icon {
@@ -161,6 +155,7 @@ h2 {
 
   section.aboutSection {
     margin: 0;
+    padding: 20px;
     padding-bottom: 20px;
     div.aboutContainer {
       display: flex;
@@ -245,21 +240,22 @@ h2 {
   section.aboutSection {
     margin: 0;
     padding: 10px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
+    
     div.aboutContainer {
       display: flex;
       flex-direction: column-reverse;
       div.aboutTextContainer {
         padding-top: 70px;
-        // padding-bottom: 50px;
         width: auto;
         font-size: 20px;
+        text-align: justify;
       }
     }
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   div.aboutSkill {
@@ -279,7 +275,7 @@ h2 {
 
   .aboutSkill {
     .skillDiv {
-      padding: 10px;
+      // padding: 10px;
       font-size: 14px;
       .skillIcon {
         padding: 10px;
