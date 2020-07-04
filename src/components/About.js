@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Skills from "./Skills";
+import { Link } from "react-scroll";
 
 class About extends React.Component {
   handleLinkClick = (url) => {
@@ -37,8 +38,18 @@ class About extends React.Component {
                 learn and improve as much as possible.
               </p>
               <p>
-                Drop me a line to discuss working together or to ask about one
-                of my projects. 
+                <Link
+                  to="contactSection"
+                  spy={true}
+                  smooth={true}
+                  delay={200}
+                  duration={1000}
+                  className="alink"
+                  activeClass="activeClass"
+                >
+                  Drop me a line {" "}
+                </Link>
+                to discuss working together or to ask about one of my projects.
               </p>
               <div className="faImages">
                 <FaGithub
