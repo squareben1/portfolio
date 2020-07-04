@@ -38,7 +38,7 @@ class About extends React.Component {
               </p>
               <p>
                 Drop me a line to discuss working together or to ask about one
-                of my projects
+                of my projects. 
               </p>
               <div className="faImages">
                 <FaGithub
