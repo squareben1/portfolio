@@ -52,6 +52,6 @@ export default [
     externalLink: null,
     gitHubLink: "https://github.com/squareben1/string_calc_kata_js",
     text:
-      "<p>This is an ongoing project built with TDD in Python. The spec stipulated that the solution be contained in a single file but now that I have it working, I am refactoring it to ensure it is properly encapsulated and conforms to the Single Responsibility Principle. I found the original coding exercise challenging and see a lot of room for improvement in my initial solution – I’m still really pleased that I managed to work through all the edge cases and a complete working program.</p>",
+      "<p>This is an ongoing project built with TDD in Python. The spec stipulated that the solution be contained in a single file but now that I have it working, I am refactoring it to ensure it is properly encapsulated and conforms to the Single Responsibility Principle. I found the original coding exercise challenging and see a lot of room for improvement in my initial solution – I’m still really pleased that I managed to work through all the edge cases and build a complete working program.</p>",
   },
 ];

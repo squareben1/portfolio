@@ -24,7 +24,7 @@ class About extends React.Component {
               <p>
                 Before joining Dignity, I worked in finance for 5 years – mostly
                 for big, traditional banks. During this time I came to realise
-                the companies that interested me most were FinTechs. Start-ups
+                the companies that interested me the most were FinTechs. Start-ups
                 like Monzo and Yolt weren’t bogged down by legacy software and
                 were free to leverage cutting edge tech to build the kind of
                 awesome personalised features that big banks never could.
