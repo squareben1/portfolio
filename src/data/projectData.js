@@ -28,7 +28,7 @@ export default [
     externalLink: "https://upandcomingpodcast.co.uk/",
     gitHubLink: "https://github.com/squareben1/upandcoming-site",
     text:
-      "<p>I decided to rebuild the website for an entertainment industry podcast I run with my brother – mostly as an excuse to put my new React knowledge into practice.</p> <p>This site is currently under construction. I’m including it here anyway because it represents the first time, I have translated a professional designer’s plans into code. This is a challenge in its own right and is spurring on a fast improvement of my front-end skills.</p>",
+      "<p>I decided to rebuild the website for an entertainment industry podcast I run with my brother – mostly as an excuse to put my new React knowledge into practice.</p> <p>This site is currently under construction. I’m including it here anyway because it represents the first time I have translated a professional designer’s plans into code. This is a challenge in its own right and is spurring on a fast improvement of my front-end skills.</p>",
   },
   {
     title: "Portfolio",
