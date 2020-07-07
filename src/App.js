@@ -5,7 +5,15 @@ import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import ReactGA from "react-ga";
 import "./styles/main.scss";
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-171801488-1');
+  ReactGA.pageview('/');
+}
+
+initializeReactGA()
 
 function App() {
   return (
