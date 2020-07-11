@@ -82,13 +82,13 @@ class Contact extends React.Component {
                   className="icon"
                   onClick={() =>
                     this.handleLinkClick(
-                      "https://drive.google.com/file/d/1h010ljR0CRS3Zl0007Bu-HoCMKUKbN3J/view?usp=sharing"
+                      "https://drive.google.com/file/d/1KZkf5m_ISCFoOEZ8Y8j3YAJcYBYdiOmZ/view?usp=sharing"
                     )
                   }
                   title="Google Doc CV"
                 />
                 <a
-                  href="https://drive.google.com/file/d/1h010ljR0CRS3Zl0007Bu-HoCMKUKbN3J/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1KZkf5m_ISCFoOEZ8Y8j3YAJcYBYdiOmZ/view?usp=sharing"
                   title="Google Doc CV"
                 >
                   CV
