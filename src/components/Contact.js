@@ -2,19 +2,64 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaFilePdf, FaEnvelope } from "react-icons/fa";
 import FlashMessage from "react-flash-message";
 import "../styles/contact.scss";
-
 class Contact extends React.Component {
-  state = {
-    formSubmitted: null,
+  constructor(props) {
+    super(props);
+    this.state = {
+      formStatus: null,
+      name: "",
+      email: "",
+      message: "",
+    };
+  }
+  onNameChange(event) {
+    this.setState({ name: event.target.value });
+  }
+  onEmailChange(event) {
+    this.setState({ email: event.target.value });
+  }
+  onMessageChange(event) {
+    this.setState({ message: event.target.value });
+  }
+  resetForm() {
+    this.setState({ name: "", email: "", message: "" });
+  }
+  handleSubmit = (event) => {
+    event.preventDefault();
+    var details = {
+      name: this.state.name,
+      fromEmail: this.state.email,
+      message: this.state.message,
+    };
+    var formBody = [];
+    for (var property in details) {
+      var encodedKey = encodeURIComponent(property);
+      var encodedValue = encodeURIComponent(details[property]);
+      formBody.push(encodedKey + "=" + encodedValue);
+    }
+    formBody = formBody.join("&");
+    fetch("https://whh0eei4ih.execute-api.eu-west-2.amazonaws.com/Prod/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: formBody,
+    }).then((response) => {
+      console.log(response);
+      if (response.ok) {
+        this.state.formStatus = true;
+        this.resetForm();
+      } else {
+        this.state.formStatus = false;
+      }
+    });
   };
   handleLinkClick = (url) => {
     window.open(url, "_blank");
   };
-
   render() {
     let confirmed = null;
-
-    if (this.state.formSubmitted != null) {
+    if (this.state.formStatus == true) {
       confirmed = (
         <div className="emailConfirmation">
           <FlashMessage duration={5000} persistOnHover={true}>
@@ -22,8 +67,15 @@ class Contact extends React.Component {
           </FlashMessage>
         </div>
       );
+    } else if (this.state.formStatus == false) {
+      confirmed = (
+        <div className="emailConfirmation">
+          <FlashMessage duration={5000} persistOnHover={true}>
+            <p>Message failed to send. Please try again.</p>
+          </FlashMessage>
+        </div>
+      );
     }
-
     return (
       <>
         <section className="contactSection" id="contact">
@@ -97,12 +149,7 @@ class Contact extends React.Component {
             </div>
             <form
               id="contactForm"
-              action="https://whh0eei4ih.execute-api.eu-west-2.amazonaws.com/Prod/send"
-              onSubmit={() =>
-                this.setState({
-                  formSubmitted: true,
-                })
-              }
+              onSubmit={this.handleSubmit.bind(this)}
               method="post"
             >
               <input
@@ -112,6 +159,8 @@ class Contact extends React.Component {
                 name="name"
                 autoCorrect="off"
                 placeholder="Your Name..."
+                value={this.state.name}
+                onChange={this.onNameChange.bind(this)}
               />
               <input
                 className="formInput"
@@ -121,12 +170,16 @@ class Contact extends React.Component {
                 autoCapitalize="off"
                 autoCorrect="off"
                 placeholder="Your Email..."
+                value={this.state.email}
+                onChange={this.onEmailChange.bind(this)}
               />
               <textarea
                 className="formInput"
                 name="message"
                 id="message"
                 placeholder="Message..."
+                value={this.state.message}
+                onChange={this.onMessageChange.bind(this)}
               ></textarea>
               <br></br>
               <input
@@ -143,5 +196,4 @@ class Contact extends React.Component {
     );
   }
 }
-
 export default Contact;
