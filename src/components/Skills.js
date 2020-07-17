@@ -10,13 +10,11 @@ import {
   FaDatabase,
   FaRecycle,
   FaSass,
-  FaGitAlt,
-  // FaGithub,
+  // FaGitAlt,
+  FaNode,
 } from "react-icons/fa";
 import {
   DiPostgresql,
-  // DiHeroku,
-  // DiVisualstudio,
   DiJsBadge,
 } from "react-icons/di";
 
@@ -47,6 +45,10 @@ const Skills = () => (
       <p>React</p>
     </div>
     <div className="skillDiv">
+      <FaNode className="skillIcon" />
+      <p>Node.js</p>
+    </div>
+    <div className="skillDiv">
       <FaDatabase className="skillIcon" />
       <p>SQL</p>
     </div>
@@ -72,22 +74,6 @@ const Skills = () => (
       <FaSass className="skillIcon" />
       <p>Sass</p>
     </div>
-    {/* <div className="skillDiv">
-      <DiHeroku className="skillIcon" />
-      <p>Heroku</p>
-    </div> */}
-    <div className="skillDiv">
-      <FaGitAlt className="skillIcon" />
-      <p>Git</p>
-    </div>
-    {/* <div className="skillDiv">
-      <FaGithub className="skillIcon" />
-      <p>GitHub</p>
-    </div> */}
-    {/* <div className="skillDiv">
-      <DiVisualstudio className="skillIcon" />
-      <p>VS Code</p>
-    </div> */}
   </div>
 );
 
