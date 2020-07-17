@@ -57,6 +57,7 @@ class Contact extends React.Component {
   handleLinkClick = (url) => {
     window.open(url, "_blank");
   };
+  
   render() {
     let confirmed = null;
     if (this.state.formStatus == true) {

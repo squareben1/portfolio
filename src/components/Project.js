@@ -23,9 +23,7 @@ const Project = (props) => {
     <>
       <div className="projectContainer">
         <div className="individualProjectHeader">
-          {/* <h2> */}
           <div className="projectTitle">{props.title} </div>
-          {/* </h2> */}
           <div className="projectLinks">
             <FaGithub
               className="projectIcon"
