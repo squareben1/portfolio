@@ -45,12 +45,11 @@ class Contact extends React.Component {
       },
       body: formBody,
     }).then((response) => {
-      console.log(response);
       if (response.ok) {
-        this.state.formStatus = true;
+        this.setState({ formStatus: true });
         this.resetForm();
       } else {
-        this.state.formStatus = false;
+        this.setState({ formStatus: false });
       }
     });
   };
