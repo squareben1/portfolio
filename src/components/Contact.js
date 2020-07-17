@@ -59,7 +59,7 @@ class Contact extends React.Component {
   
   render() {
     let confirmed = null;
-    if (this.state.formStatus == true) {
+    if (this.state.formStatus === true) {
       confirmed = (
         <div className="emailConfirmation">
           <FlashMessage duration={5000} persistOnHover={true}>
@@ -67,7 +67,7 @@ class Contact extends React.Component {
           </FlashMessage>
         </div>
       );
-    } else if (this.state.formStatus == false) {
+    } else if (this.state.formStatus === false) {
       confirmed = (
         <div className="emailConfirmation">
           <FlashMessage duration={5000} persistOnHover={true}>
