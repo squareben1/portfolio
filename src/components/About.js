@@ -17,12 +17,12 @@ class About extends React.Component {
             <div className="aboutTextContainer">
               <h1 className="aboutTitle">About Me</h1>
               <p>
-                I’m a Developer at Dignity Platform – an online skill sharing
+                I’m a Developer at Gigfunding.org – an online skill sharing
                 marketplace where money paid goes directly to charities.
               </p>
 
               <p>
-                Before joining Dignity, I worked in finance for 5 years – mostly
+                Before joining Gigfunding, I worked in finance for 5 years – mostly
                 for big, traditional banks. During this time I came to realise
                 the companies that interested me the most were FinTechs.
                 Start-ups like Monzo and Yolt weren’t bogged down by legacy
