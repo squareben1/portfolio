@@ -22,20 +22,27 @@ class About extends React.Component {
               </p>
 
               <p>
-                Before joining Gigfunding, I worked in finance for 5 years – mostly
-                for big, traditional banks. During this time I came to realise
-                the companies that interested me the most were FinTechs.
-                Start-ups like Monzo and Yolt weren’t bogged down by legacy
-                software and were free to leverage cutting edge tech to build
-                the kind of awesome personalised features that big banks
-                couldn't offer.
+                Before joining Gigfunding, I worked in finance for five years –
+                mostly for big, traditional banks. During this time, I came to
+                realise the companies that interested me the most were FinTechs.
+                Start-ups like Monzo & Yolt weren’t bogged down by legacy
+                software & were free to leverage cutting edge tech to build the
+                kind of awesome, personalised features that big banks couldn't
+                offer.
               </p>
 
               <p>
                 So, last year, I decided to learn the tools to build things
-                myself. I started off with online Ruby courses before enrolling at a
-                coding bootcamp. I have been learning and building things ever
-                since. 
+                myself. I started with online Ruby courses before enrolling at a
+                coding Bootcamp. I have been learning & making things ever
+                since. My current project is a PERN stack budgeting app that I'm
+                building with a friend. The main aim is to teach young people
+                how to write a budget in as simple & clear a way as possible.
+                When it's finished you'll be able to try it out at{" "}
+                <a href="https://bujj.it/" title="bujj.it" className="alink">
+                  bujj.it
+                </a>
+                .
               </p>
               <p>
                 <Link
@@ -47,8 +54,8 @@ class About extends React.Component {
                   className="alink"
                   activeClass="activeClass"
                 >
-                  Drop me a line{" "}
-                </Link>
+                  Drop me a line
+                </Link>{" "}
                 to discuss working together or to ask about one of my projects.
               </p>
               <div className="faImages">
