@@ -33,10 +33,9 @@ class About extends React.Component {
 
               <p>
                 So, last year, I decided to learn the tools to build things
-                myself. I started learning Ruby online before enrolling at a
+                myself. I started off with online Ruby courses before enrolling at a
                 coding bootcamp. I have been learning and building things ever
-                since. I'm always looking for projects that will help me learn
-                and improve as much as possible.
+                since. 
               </p>
               <p>
                 <Link
