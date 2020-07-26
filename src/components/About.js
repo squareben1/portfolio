@@ -23,12 +23,11 @@ class About extends React.Component {
 
               <p>
                 Before joining Gigfunding, I worked in finance for five years –
-                mostly for big, traditional banks. During this time, I came to
-                realise the companies that interested me the most were FinTechs.
-                Start-ups like Monzo & Yolt weren’t bogged down by legacy
-                software & were free to leverage cutting edge tech to build the
-                kind of awesome, personalised features that big banks couldn't
-                offer.
+                mostly for big, traditional banks. I came to realise the
+                companies that interested me the most were FinTechs. Start-ups
+                like Monzo & Yolt weren’t bogged down by legacy software & were
+                free to leverage cutting edge tech to build the kind of awesome,
+                personalised features that big banks couldn't offer.
               </p>
 
               <p>
