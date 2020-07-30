@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaFilePdf, FaEnvelope } from "react-icons/fa";
 import FlashMessage from "react-flash-message";
 import "../styles/contact.scss";
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -56,7 +57,7 @@ class Contact extends React.Component {
   handleLinkClick = (url) => {
     window.open(url, "_blank");
   };
-  
+
   render() {
     let confirmed = null;
     if (this.state.formStatus === true) {
@@ -134,13 +135,13 @@ class Contact extends React.Component {
                   className="icon"
                   onClick={() =>
                     this.handleLinkClick(
-                      "https://drive.google.com/file/d/1rWryuzv9e04eVsYavzvW2i0Z-2JjtKfH/view?usp=sharing"
+                      "https://drive.google.com/file/d/14WRTfRwhmoIEmp4WHasU7YIWDvJExGLS/view?usp=sharing"
                     )
                   }
                   title="Google Doc CV"
                 />
                 <a
-                  href="https://drive.google.com/file/d/1rWryuzv9e04eVsYavzvW2i0Z-2JjtKfH/view?usp=sharing"
+                  href="https://drive.google.com/file/d/14WRTfRwhmoIEmp4WHasU7YIWDvJExGLS/view?usp=sharing"
                   title="Google Doc CV"
                 >
                   CV
