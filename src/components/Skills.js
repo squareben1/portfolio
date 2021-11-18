@@ -1,6 +1,7 @@
 import React from "react";
 // import IconRails from 'react-devicon/rails/plain'
 import railsIcon from "../assets/railsIcon.png";
+import ansibleIcon from "../assets/ansibleIcon.png"
 import {
   FaGem,
   FaHtml5,
@@ -10,7 +11,7 @@ import {
   FaDatabase,
   FaRecycle,
   FaSass,
-  // FaGitAlt,
+  FaAws,
   FaNode,
 } from "react-icons/fa";
 import {
@@ -18,20 +19,14 @@ import {
   DiJsBadge,
 } from "react-icons/di";
 
+
 const Skills = () => (
   <div className="aboutSkill">
+    
     <div className="skillDiv">
-      <FaGem className="skillIcon" />
-      <p>
-        Ruby
-      </p>
+      <FaAws className="skillIcon" />
+      <p>AWS</p>
     </div>
-    <div className="skillDiv">
-      <img className="skillIcon" src={railsIcon} alt="img" />
-      {/* <IconRails width={100} height={100}/> */}
-      <p>Ruby on Rails</p>
-    </div>
-
     <div className="skillDiv">
       <FaPython className="skillIcon" />
       <p>Python</p>
@@ -49,12 +44,24 @@ const Skills = () => (
       <p>Node.js</p>
     </div>
     <div className="skillDiv">
+      <FaGem className="skillIcon" />
+      <p>
+        Ruby
+      </p>
+    </div>
+    <div className="skillDiv">
+      <img className="skillIcon" src={railsIcon} alt="img" />
+      {/* <IconRails width={100} height={100}/> */}
+      <p>Ruby on Rails</p>
+    </div>
+    <div className="skillDiv">
       <FaDatabase className="skillIcon" />
       <p>SQL</p>
     </div>
     <div className="skillDiv">
-      <DiPostgresql className="skillIcon" />
-      <p>PostgreSQL</p>
+      <img className="skillIcon" src={ansibleIcon} alt="img" />
+      {/* <IconRails width={100} height={100}/> */}
+      <p>Ansible</p>
     </div>
     <div className="skillDiv">
       <FaRecycle className="skillIcon" />

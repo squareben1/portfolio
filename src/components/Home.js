@@ -13,7 +13,7 @@ class Home extends React.Component {
           <div className="homeTextContainer">
             Hi, I'm Ben.
             <br></br>
-            I'm a Full Stack Software Developer.
+            I’m a Site Reliability Engineer.
           </div>
           <div className="profilePic">
             <img src={profilePic} alt="profilePic" />

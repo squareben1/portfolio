@@ -2,8 +2,8 @@ import DinoRun from "../assets/dinorun_win.png";
 import CatBook from "../assets/catbook.png";
 import Podcast from "../assets/upandcoming_main.png";
 import StringCalc from "../assets/stringcalc_jasmine.png";
-import Portfolio from "../assets/portfolio.png";
-import ConnectZ from "../assets/connectz.png";
+import Bujjit from "../assets/bujjit.png";
+import StockChecker from "../assets/stockChecker.png";
 
 export default [
   {
@@ -23,6 +23,22 @@ export default [
       "<p>Facebook style Rails app built as part of an agile team. Features were added iteratively to reflect working conditions on a live project. The last time I worked on a software project in this way was as a Business Analyst. It was fascinating to build out the releases from the perspective of a developer this time round. </p> <p>Users are able to sign up, log in/out, post to their timeline, post to another user's wall, comment on and like posts, delete/update comments, and delete/update their own posts.</p> <p>In addition to getting used to production workflows, this project taught me valuable lessons in database development as well as UX Design & journey mapping.</p>",
   },
   {
+    title: "Stock Alert Lambda",
+    image: StockChecker,
+    externalLink: null,
+    gitHubLink: "https://github.com/squareben1/stock-alert",
+    text:
+      "<p>A Lambda function which sends a text message when the price of one of a list of selected stocks and index funds drops by a specified percentage. Built using AWS Lambda and SNS.</p>",
+  },
+  {
+    title: "bujj.it",
+    image: Bujjit,
+    externalLink: "https://bujj.it/",
+    gitHubLink: "https://github.com/bujj-it/bujj.it",
+    text:
+      "<p>[WIP] Simple to use budgeting tool built using React/Redux and NodeJS. bujj.it is designed to teach young people to budget effectively in as simple and clear a way as possible. Features include user sign-up and authentication, mobile-first responsive design, and Redux-powered budget calculator.</p>",
+  },
+  {
     title: "Up & Coming Podcast Site",
     image: Podcast,
     externalLink: "https://upandcomingpodcast.co.uk/",
@@ -31,27 +47,11 @@ export default [
       "<p>I decided to rebuild the website for an entertainment industry podcast I run with my brother – mostly as an excuse to put my new React knowledge into practice.</p> <p>This site is currently under construction. I’m including it here anyway because it represents the first time I have translated a professional designer’s plans into code. This is a challenge in its own right and is spurring on a fast improvement of my front-end skills.</p>",
   },
   {
-    title: "Portfolio",
-    image: Portfolio,
-    externalLink: "https://bgittins.com/",
-    gitHubLink: "https://github.com/squareben1/portfolio",
-    text:
-      "<p>Site-ception! I learned a huge amount building the very site you’re on now. It's a fairly simple single page app, but is a more involved front-end project than those I have done previously. It really helped me figure out responsive design using breakpoints in Sass.</p> <p>The most interesting part of the project for me is the humble contact form in the section below. I had been meaning to learn about serverless architecture so decided to implement an AWS Lambda function for the form. After a lot of trial and error (during which time I basically built a server on the project – somewhat missing the point of the exercise) I ended up modifying an existing lambda function. I was really pleased with the result – give it a whirl, knowing any message I receive through my shiny serverless contact form will bring me disproportionate joy.</p>",
-  },
-  {
     title: "String Calc Kata",
     image: StringCalc,
     externalLink: null,
     gitHubLink: "https://github.com/squareben1/string_calc_kata_js",
     text:
       "<p>A TDD kata which adds new requirements incrementally to simulate a real business situation. Test Driven Development is my preferred way to write code and the steps in this kata were completed with as good a TDD process as I could muster. It turned out to be one of my favourite coding exercises up to that point as it lends itself really well to a test-driven approach.</p>",
-  },
-  {
-    title: "ConnectZ",
-    image: ConnectZ,
-    externalLink: null,
-    gitHubLink: "https://github.com/squareben1/string_calc_kata_js",
-    text:
-      "<p>This is an ongoing project built with TDD in Python. The spec stipulated that the solution be contained in a single file but now that I have it working, I am refactoring it to ensure it is properly encapsulated and conforms to the Single Responsibility Principle. I found the original coding exercise challenging and see a lot of room for improvement in my initial solution – I’m still really pleased that I managed to work through all the edge cases and build a complete working program.</p>",
   },
 ];

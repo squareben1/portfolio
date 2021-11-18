@@ -91,12 +91,7 @@ class Contact extends React.Component {
                   }
                   title="mailto:bengittins@live.com"
                 />
-                <a
-                  href="mailto:bengittins@live.com"
-                  title="mailto:bengittins@live.com"
-                >
-                  bengittins@live.com
-                </a>
+                bengittins@live.com
               </div>
               <div className="contactText">
                 <FaGithub
@@ -106,12 +101,7 @@ class Contact extends React.Component {
                   }
                   title="github.com/squareben1"
                 />
-                <a
-                  href="https://github.com/squareben1"
-                  title="github.com/squareben1"
-                >
-                  github.com/squareben1
-                </a>
+                github.com/squareben1
               </div>
               <div className="contactText">
                 <FaLinkedin
@@ -123,29 +113,7 @@ class Contact extends React.Component {
                   }
                   title="linkedin.com/in/bengittins"
                 />
-                <a
-                  href="https://www.linkedin.com/in/bengittins/"
-                  title="linkedin.com/in/bengittins"
-                >
-                  linkedin.com/in/bengittins
-                </a>
-              </div>
-              <div className="contactText">
-                <FaFilePdf
-                  className="icon"
-                  onClick={() =>
-                    this.handleLinkClick(
-                      "https://drive.google.com/file/d/14WRTfRwhmoIEmp4WHasU7YIWDvJExGLS/view?usp=sharing"
-                    )
-                  }
-                  title="Google Doc CV"
-                />
-                <a
-                  href="https://drive.google.com/file/d/14WRTfRwhmoIEmp4WHasU7YIWDvJExGLS/view?usp=sharing"
-                  title="Google Doc CV"
-                >
-                  CV
-                </a>
+                linkedin.com/in/bengittins
               </div>
             </div>
             <form

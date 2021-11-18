@@ -17,31 +17,10 @@ class About extends React.Component {
             <div className="aboutTextContainer">
               <h1 className="aboutTitle">About Me</h1>
               <p>
-                I’m a Developer at Gigfunding.org – an online skill sharing
-                marketplace where money paid goes directly to charities.
+                I’m a Site Reliability Engineer & Developer from London.
               </p>
-
               <p>
-                Before joining Gigfunding, I worked in finance for five years –
-                mostly for big, traditional banks. I came to realise the
-                companies that interested me the most were FinTechs. Start-ups
-                like Monzo & Yolt weren’t bogged down by legacy software & were
-                free to leverage cutting edge tech to build the kind of awesome,
-                personalised features that big banks couldn't offer.
-              </p>
-
-              <p>
-                So, last year, I decided to learn the tools to build things
-                myself. I started with online Ruby courses before enrolling at a
-                coding Bootcamp. I have been learning & making things ever
-                since. My current project is a PERN stack budgeting app that I'm
-                building with a friend. The main aim is to teach young people
-                how to write a budget in as simple & clear a way as possible.
-                When it's finished you'll be able to try it out at{" "}
-                <a href="https://bujj.it/" title="bujj.it" className="alink">
-                  bujj.it
-                </a>
-                .
+                I'm currently living in Los Angeles, CA where I'm taking some time to focus on learning & improving skills in AWS, IaC, networking, server automation, programming & CI/CD.
               </p>
               <p>
                 <Link
