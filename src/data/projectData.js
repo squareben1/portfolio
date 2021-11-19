@@ -20,7 +20,7 @@ export default [
     externalLink: "https://acebook-catbook-inc.herokuapp.com/",
     gitHubLink: "https://github.com/squareben1/acebook-catbook-inc",
     text:
-      "<p>Facebook style Rails app built as part of an agile team. Features were added iteratively to reflect working conditions on a live project. The last time I worked on a software project in this way was as a Business Analyst. It was fascinating to build out the releases from the perspective of a developer this time round. </p> <p>Users are able to sign up, log in/out, post to their timeline, post to another user's wall, comment on and like posts, delete/update comments, and delete/update their own posts.</p> <p>In addition to getting used to production workflows, this project taught me valuable lessons in database development as well as UX Design & journey mapping.</p>",
+      "<p>Facebook style Rails app built as part of an agile team. Features were added iteratively to reflect working conditions on a live project.</p> <p>Users are able to sign up, log in/out, post to their timeline, post to another user's wall, comment on and like posts, delete/update comments, and delete/update their own posts.</p> <p>In addition to getting used to production workflows, this project taught me valuable lessons in database development as well as UX Design & journey mapping.</p>",
   },
   {
     title: "Stock Alert Lambda",
@@ -28,7 +28,7 @@ export default [
     externalLink: null,
     gitHubLink: "https://github.com/squareben1/stock-alert",
     text:
-      "<p>A Lambda function which sends a text message when the price of one of a list of selected stocks and index funds drops by a specified percentage. Built using AWS Lambda and SNS.</p>",
+      "<p>A Lambda function which sends a text message when the price of one of a list of selected stocks and index funds drops by a specified percentage. Built using Node JS, AWS Lambda and SNS.</p>",
   },
   {
     title: "bujj.it",

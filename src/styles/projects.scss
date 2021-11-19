@@ -44,7 +44,7 @@ $breakpoint-iphone6-7-8: 767px;
 }
 
 .projectsIntro {
-  font-size: 18px;
+  font-size: 20px;
   @media (max-width: $breakpoint-ipad) {
     font-size: 18px;
   }
@@ -99,7 +99,7 @@ $breakpoint-iphone6-7-8: 767px;
   &:hover {
     .coverImageText {
       opacity: 0.9;
-      font-size: 16px;
+      font-size: 20px;
       padding: 20px;
       text-align: justify;
       @media (max-width: $breakpoint-iphone6-7-8) {
