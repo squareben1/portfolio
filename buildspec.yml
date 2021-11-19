@@ -20,5 +20,13 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - build/**
+    - build/static/*
+    - build/asset-manifest.json
+    - build/favicon.ico
+    - build/favicon.png
+    - build/index.html
+    - build/manifest.json
+    - build/precache-manifest.*
+    - build/robots.txt
+    - build/service-workers.js
   name: bengittins-com-$(date +%Y-%m-%d)
