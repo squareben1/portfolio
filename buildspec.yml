@@ -20,4 +20,5 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - build/*
+    - build/**
+  name: bengittins-com-$(date +%Y-%m-%d)
