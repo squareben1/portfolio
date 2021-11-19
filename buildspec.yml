@@ -16,17 +16,8 @@ phases:
       - echo Build started on `date`
       - yarn build
   post_build:
+    on-failure: ABORT 
     commands:
+      - echo 'syncing changes'
+      - aws s3 sync build/ s3://bengittins.com/ --delete
       - echo Build completed on `date`
-artifacts:
-  files:
-    - build/static/**
-    - build/asset-manifest.json
-    - build/favicon.ico
-    - build/favicon.png
-    - build/index.html
-    - build/manifest.json
-    - build/precache-manifest.*
-    - build/robots.txt
-    - build/service-workers.js
-  name: bengittins-com-$(date +%Y-%m-%d)
