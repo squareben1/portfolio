@@ -20,7 +20,7 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - build/static/*
+    - build/static/**
     - build/asset-manifest.json
     - build/favicon.ico
     - build/favicon.png
