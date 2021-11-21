@@ -32,7 +32,7 @@ class About extends React.Component {
                   className="alink"
                   activeClass="activeClass"
                 >
-                  Drop me a line
+                  Get in touch
                 </Link>{" "}
                 to discuss working together or to ask about one of my projects.
               </p>
