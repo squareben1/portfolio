@@ -20,7 +20,7 @@ class About extends React.Component {
                 I’m a Site Reliability Engineer & Developer from London.
               </p>
               <p>
-                I'm currently living in Los Angeles, CA where I'm taking some time to focus on learning & improving skills in AWS, IaC, networking, server automation, programming & CI/CD.
+                I currently live in Los Angeles, CA where I'm taking some time to focus on learning & improving skills in AWS, IaC, networking, server automation, programming & CI/CD.
               </p>
               <p>
                 <Link
