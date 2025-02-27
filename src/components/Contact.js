@@ -84,6 +84,16 @@ class Contact extends React.Component {
           <div className="contactContainer">
             <div className="contactHolder">
               <div className="contactText">
+                <FaEnvelope
+                  className="icon"
+                  onClick={() =>
+                    this.handleLinkClick("mailto:bengittins@live.com")
+                  }
+                  title="mailto:bengittins@live.com"
+                />
+                bengittins@live.com
+              </div>
+              <div className="contactText">
                 <FaGithub
                   className="icon"
                   onClick={() =>
